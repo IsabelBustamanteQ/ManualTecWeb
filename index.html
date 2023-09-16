@@ -1,0 +1,1393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual HTML</title>
+    <style>
+        td{
+            background-color:lightcyan;
+            border-style:solid;
+            border-color: cadetblue;
+        }
+        th{
+            background-color: aquamarine;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Comandos HTML</h1>
+        <ul>
+            <li><a href="index.html">Html</a></li>
+            <li><a href="./html/css.html" target="_self">css</a></li>
+        </ul>
+    </header>
+    <main>
+        <table>
+            <thead>
+                <tr>
+                    <th scope="col">Elemento</th>
+                    <th scope="col">Descripcion</th>
+                    <th scope="col">Ejemplo</th>
+                    <th scope="col">Informacion adicional</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr id="a">
+                    <th class="Elemento" scope="row">&lt;a&gt;</th>
+                    <td class="Descripcion">
+                        <p>Permite crear un hipervínculo a cualquier URL.</p>
+                        <p>Contenido Permitido:</p>
+                        <ul>
+                            <li>Contenido Transparente</li>
+                        </ul>
+                        <p>Categorías a las que pertenece:</p>
+                        <ul>
+                            <li>Contenido Fluido</li>
+                            <li>Contenido de Fraseo</li>
+                            <li>Contenido Interactivo</li>
+                            <li>Contenido Palpable</li>
+                        </ul>
+                    </td>
+                    <td class="Ejemplo">
+                        <pre><code>
+&lt;a href="https://www.mozilla.com"&gt;Mozilla&lt;/a&gt;
+                        </code></pre>
+                        <p style="font-weight: bold;">Resultado:</p>
+                        <div class="Implementacion">
+                            <a href="https://www.mozilla.com">Mozilla</a>
+                        </div>                        
+                    </td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a" target="_blank">Informacion adicional</a></td>
+                </tr>
+                <tr id="abbr">
+                    <th class="Elemento" scope="row">&lt;abbr&gt;</th>
+                    <td class="Descripcion">
+                        <p>Representa una abreviación.</p>
+                        <p>Puede contener el atributo <code>title</code> para colocar el significado.</p>
+                        <p>Contenido Permitido:</p>
+                        <ul>
+                            <li>Contenido de Fraseo</li>
+                        </ul>
+                        <p>Categorías a las que pertenece:</p>
+                        <ul>
+                            <li>Contenido Fluido</li>
+                            <li>Contenido de Fraseo</li>
+                            <li>Contenido Palpable</li>
+                        </ul>
+                    </td>
+                    <td class="Ejemplo">
+                        <pre><code> 
+&lt;p&gt; &lt;abbr title="Laugh Out Loud"&gt;LOL&lt;/abbr&gt; big time.&lt;/p&gt;
+                        </code></pre>
+                        <p style="font-weight: bold;">Resultado:</p>
+                        <div class="Implementacion">
+                            <p> <abbr title="Laugh Out Loud">LOL</abbr> big time.</p>
+                        </div>                      
+                    </td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/abbr" target="_blank">Informacion adicional</a></td>
+                </tr>
+                <tr id="address">
+                    <th class="Elemento" scope="row">&lt;address&gt;</th>
+                    <td class="Descripcion">
+                        <p>Indica una información de contacto.</p>
+                        <p>Contenido Permitido:</p>
+                        <ul>
+                            <li>Contenido Fluido (sin address, encabezados o contenido se sección)</li>
+                        </ul>
+                        <p>Categorías a las que pertenece:</p>
+                        <ul>
+                            <li>Contenido Fluido</li>
+                            <li>Contenido Palpable</li>
+                        </ul>
+                    </td>
+                    <td class="Ejemplo">
+                        <pre><code>
+&lt;address&gt;
+    &lt;a href="mailto:jim@rock.com"&gt;jim@rock.com&lt;/a&gt;
+&lt;/address&gt;
+                        </code></pre>
+                        <p style="font-weight: bold;">Resultado:</p>
+                        <div class="Implementacion">
+                            <address>
+                                <a href="mailto:jim@rock.com">jim@rock.com</a>
+                            </address>
+                        </div>
+                    </td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/address" target="_blank">Informacion adicional</a></td>
+                </tr>
+                <tr id="area">
+                    <th class="Elemento" scope="row">&lt;area&gt;</th>
+                    <td class="Descripcion">
+                        <p>Define un area dentro de una imagen que tiene un area oredefinida para hacer click.</p>
+                        <p>Se usa dentro de un elemento <code>&lt;map&gt;</code></p>
+                        <p>Contenido Permitido:</p>
+                        <ul>
+                            <li>Ninguno</li>
+                        </ul>
+                        <p>Categorías a las que pertenece:</p>
+                        <ul>
+                            <li>Contenido Fluido</li>
+                            <li>Contenido de Fraseo</li>
+                        </ul>
+                    </td>
+                    <td class="Ejemplo">
+                        <pre><code>
+&lt;map name="primary"&gt;
+    &lt;area
+        shape="circle"
+        coords="75,75,75"
+        href="left.html"
+        alt="Click to go Left" /&gt;
+    &lt;area
+        shape="circle"
+        coords="275,75,75"
+        href="right.html"
+        alt="Click to go Right" /&gt;
+&lt;/map&gt;
+&lt;img
+usemap="#primary"
+src="https://via.placeholder.com/350x150"
+alt="350 x 150 pic" /&gt;
+                        </code></pre>
+                        <p style="font-weight: bold;">Resultado:</p>
+                        <div class="Implementacion">
+                            <map name="primary">
+                                <area
+                                  shape="circle"
+                                  coords="75,75,75"
+                                  href="left.html"
+                                  alt="Click to go Left" />
+                                <area
+                                  shape="circle"
+                                  coords="275,75,75"
+                                  href="right.html"
+                                  alt="Click to go Right" />
+                              </map>
+                              <img
+                                usemap="#primary"
+                                src="https://via.placeholder.com/350x150"
+                                alt="350 x 150 pic" />    
+                        </div>
+                    </td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/area" target="_blank">Informacion adicional</a></td>
+                </tr>
+                <tr id="article">
+                    <th class="Elemento" scope="row">&lt;article&gt;</th>
+                    <td class="Descripcion">
+                        <p>Representa una composición autónoma en un documento que está destinado a ser reutilizado de forma independiente.</p>
+                        <p>Contenido Permitido:</p>
+                        <ul>
+                            <li>Contenido Fluido</li>
+                        </ul>
+                        <p>Categorías a las que pertenece:</p>
+                        <ul>
+                            <li>Contenido Fluido</li>
+                            <li>Contenido Seleccionado</li>
+                            <li>Contenido Palpable</li>
+                        </ul>
+                    </td>
+                    <td class="Ejemplo">
+                        <pre><code>
+&lt;article class="day-forecast"&gt;
+    &lt;h2&gt;03 March 2018&lt;/h2&gt;
+    &lt;p&gt;Rain.&lt;/p&gt;
+&lt;/article&gt;
+                        </code></pre>                        
+                        <p style="font-weight: bold;">Resultado:</p>
+                        <div>
+                            <article class="day-forecast">
+                                <h2>03 March 2018</h2>
+                                <p>Rain.</p>
+                            </article>
+                        </div>
+                    </td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/article" target="_blank">Informacion adicional</a></td>
+                </tr>
+                <tr id="aside">
+                    <th class="Elemento" scope="row">&lt;aside&gt;</th>
+                    <td class="Descripcion">
+                        <p>Representa una parte de un documento cuyo contenido está sólo indirectamente relacionado con el contenido principal del documento.</p>
+                        <p>Se presentan con frecuencia como barras laterales o cuadros de notas.</p>
+                        <p>Contenido Permitido:</p>
+                        <ul>
+                            <li>Contenido Fluido</li>
+                        </ul>
+                        <p>Categorías a las que pertenece:</p>
+                        <ul>
+                            <li>Contenido Fluido</li>
+                            <li>Contenido Seleccionado</li>
+                            <li>Contenido Palpable</li>
+                        </ul>
+                    </td>
+                    <td class="Ejemplo">
+                        <pre><code>
+&lt;article&gt;
+    &lt;p&gt;
+        Contenido principal.
+    &lt;/p&gt;
+    &lt;aside&gt;
+        &lt;p&gt;Contenido relacionado al principal.&lt;/p&gt;
+    &lt;/aside&gt;
+&lt;/article&gt;          
+                        </code></pre>
+                        <p style="font-weight: bold;">Resultado:</p>
+                        <div class="Implementacion">
+                            <article>
+                                <p>
+                                    Contenido principal.
+                                </p>
+                                <aside>
+                                    <p>Contenido relacionado al principal.</p>
+                                </aside>
+                            </article>
+                        </div>
+                    </td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/aside" target="_blank">Informacion adicional</a></td>
+                </tr>
+                <tr id="audio">
+                    <th class="Elemento" scope="row">&lt;audio&gt;</th>
+                    <td class="Descripcion">
+                        <p>Se utiliza para incrustar contenido de sonido.</p>
+                        <p>Puede contener una o más fuentes de audio.</p>
+                        <p>También puede ser el destino de los medios transmitidos mediante streaming.</p>
+                        <p>Contenido Permitido:</p>
+                        <ul>
+                            <li>Contenido Transparente</li>
+                        </ul>
+                        <p>Categorías a las que pertenece:</p>
+                        <ul>
+                            <li>Contenido Fluido</li>
+                            <li>Contenido de Fraseo</li>
+                            <li>Contenido Incrustado</li>
+                        </ul>
+                    </td>
+                    <td class="Ejemplo">
+                        <pre><code>
+&lt;audio controls src="/media/SaveYourTears.mp3"&gt;
+&lt;/audio&gt;
+                        </code></pre>
+                        <p style="font-weight: bold;">Resultado:</p>
+                        <div class="Implementacion">
+                            <audio controls src="/media/SaveYourTears.mp3"></audio>
+                        </div>
+                    </td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio" target="_blank">Informacion adicional</a></td>
+                </tr>
+                <tr id="b">
+                    <th class="Elemento" scope="row">&lt;b&gt;</th>
+                    <td class="Descripcion">
+                        <p>Sirve para llamar la atención del lector sobre el contenido (Palabras Clave).</p>
+                        <p>Antes se usaba para poner texto en negrita, pero no debe usarse para aplicar estilo al texto.</p>
+                        <p>Contenido Permitido:</p>
+                        <ul>
+                            <li>Contenido de Fraseo</li>
+                        </ul>
+                        <p>Categorías a las que pertenece:</p>
+                        <ul>
+                            <li>Contenido Fluido</li>
+                            <li>Contenido de Fraseo</li>
+                            <li>Contenido Palpable</li>
+                        </ul>
+                    </td>
+                    <td class="Ejemplo">
+                        <pre><code>
+&lt;p&gt;
+    This article describes several &lt;b class="keywords"&gt;text-level&lt;/b&gt; elements. It
+    explains their usage in an &lt;b class="keywords"&gt;HTML&lt;/b&gt; document.
+&lt;/p&gt;                  
+                        </code></pre>
+                        <p style="font-weight: bold;">Resultado:</p>
+                        <div class="Implementacion">
+                            <p>
+                                This article describes several <b class="keywords">text-level</b> elements. It
+                                explains their usage in an <b class="keywords">HTML</b> document.
+                            </p>
+                        </div>
+                    </td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/b" target="_blank">Informacion adicional</a></td>
+                </tr>
+                <tr id="base">
+                    <th class="Elemento" scope="row">&lt;base&gt;</th>
+                    <td class="Descripcion">
+                        <p>Especifica la URL base que se utilizará para todas las URL relativas de un documento.</p>
+                        <p>Solo puede existir un elemento base en un documento.</p>
+                        <p>Contenido Permitido:</p>
+                        <ul><li>Ninguno</li></ul>
+                        <p>Categorías a las que pertenece:</p>
+                        <ul><li>Contenido de Metadatos</li></ul>
+                    </td>
+                    <td class="Ejemplo">
+                        <pre><code>
+&lt;base target="_top" href="https://example.com/" /&gt;
+                        </code></pre>
+                    </td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base" target="_blank">Informacion adicional</a></td>
+                </tr>
+                <tr id="bdi">
+                    <th class="Elemento" scope="row">&lt;bdi&gt;</th>
+                    <td class="Descripcion">
+                        <p>Le dice al algoritmo bidireccional del navegador que trate el texto que contiene de forma aislada del texto circundante.</p>
+                        <p>Es útil cuando se inserta texto dinámicamente.</p>
+                        <p>Contenido Permitido:</p>
+                        <ul><li>Contenido de Fraseo</li></ul>
+                        <p>Categorías a las que pertenece:</p>
+                        <ul>
+                            <li>Contenido Fluido</li>
+                            <li>Contenido de Fraseo</li>
+                            <li>Contenido Palpable</li>
+                        </ul>
+                    </td>
+                    <td class="Ejemplo">
+                        <pre><code>
+&lt;bdi class="name"&gt;Evil Steven&lt;/bdi&gt;: 1st place
+                        </code></pre>
+                        <p style="font-weight: bold;">Resultado:</p>
+                        <div class="Implementacion">
+                            <bdi class="name">Evil Steven</bdi>: 1st place
+                        </div>
+                    </td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/bdi" target="_blank">Informacion adicional</a></td>
+                </tr>
+                <tr id="bdo">
+                    <th class="Elemento" scope="row">&lt;bdo&gt;</th>
+                    <td class="Descripcion">
+                        <p>Anula la direccionalidad actual del texto, de modo que el texto que contiene se representa en una dirección diferente.</p>
+                        <p>Contenido Permitido:</p>
+                        <ul><li>Contenido de Fraseo</li></ul>
+                        <p>Categorías a las que pertenece:</p>
+                        <ul>
+                            <li>Contenido Fluido</li>
+                            <li>Contenido de Fraseo</li>
+                            <li>Contenido Palpable</li>
+                        </ul>
+                    </td>
+                    <td class="Ejemplo"><pre><code>
+&lt;p&gt;This text will go left to right.&lt;/p&gt;
+&lt;p&gt;&lt;bdo dir="rtl"&gt;This text will go right to left.&lt;/bdo&gt;&lt;/p&gt;
+
+                        </code></pre>
+                        <p style="font-weight: bold;">Resultado:</p>
+                        <div class="Implementacion">
+                            <p>This text will go left to right.</p>
+                            <p><bdo dir="rtl">This text will go right to left.</bdo></p>
+                        </div>
+                    </td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/bdo" target="_blank">Informacion adicional</a></td>
+                </tr>
+                <tr id="blockquote">
+                    <th class="Elemento" scope="row">&lt;blockquote&gt;</th>
+                    <td class="Descripcion">
+                        <p>Indica que el texto adjunto es una cita ampliada.</p>
+                        <p>Contenido Permitido:</p>
+                        <ul><li>Contenido Fluido</li></ul>
+                        <p>Categorías a las que pertenece:</p>
+                        <ul>
+                            <li>Contenido Fluido</li>
+                            <li>Contenido Palpable</li>
+                            <li>Sectioning Root</li>
+                        </ul>
+                    </td>
+                    <td class="Ejemplo">
+                        <pre><code>
+&lt;blockquote cite="https://datatracker.ietf.org/doc/html/rfc1149"&gt;
+    &lt;p&gt;
+        Avian carriers can provide high delay, low throughput, and low altitude
+        service. The connection topology is limited to a single point-to-point path
+        for each carrier, used with standard carriers, but many carriers can be used
+        without significant interference with each other, outside early spring. This
+        is because of the 3D ether space available to the carriers, in contrast to
+        the 1D ether used by IEEE802.3. The carriers have an intrinsic collision
+        avoidance system, which increases availability.
+    &lt;/p&gt;
+&lt;/blockquote&gt;
+                        </code></pre>
+                        <p style="font-weight: bold;">Resultado:</p>
+                        <div class="Implementacion">
+                            <blockquote cite="https://datatracker.ietf.org/doc/html/rfc1149">
+                                <p>
+                                  Avian carriers can provide high delay, low throughput, and low altitude
+                                  service. The connection topology is limited to a single point-to-point path
+                                  for each carrier, used with standard carriers, but many carriers can be used
+                                  without significant interference with each other, outside early spring. This
+                                  is because of the 3D ether space available to the carriers, in contrast to
+                                  the 1D ether used by IEEE802.3. The carriers have an intrinsic collision
+                                  avoidance system, which increases availability.
+                                </p>
+                              </blockquote>
+                              
+                        </div>
+                    </td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote" target="_blank">Informacion adicional</a></td>
+                </tr>
+                <tr id="body">
+                    <th class="Elemento" scope="row">&lt;body&gt;</th>
+                    <td class="Descripcion">
+                        <p>Representa el contenido de un documento HTML. Solo puede haber uno en un documento</p>
+                        <p>Contenido Permitido:</p>
+                        <ul><li>Contenido Fluido</li></ul>
+                        <p>Categorías a las que pertenece:</p>
+                        <ul><li>Ninguno</li></ul>
+                    </td>
+                    <td class="Ejemplo">
+                        <pre><code>
+&lt;html lang="en"&gt;
+    &lt;head&gt;
+        ...
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;p&gt; Lorem ipsum dolor sit amet consectetur adipisicing elit.&lt;p&gt;
+    &lt;/body&gt;
+&lt;/html&gt;      
+                        </code></pre>
+                    </td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/body" target="_blank">Informacion adicional</a></td>
+                </tr>
+                <tr id="br">
+                    <th class="Elemento" scope="row">&lt;br&gt;</th>
+                    <td class="Descripcion">
+                        <p>Produce un salto de línea en el texto.</p>
+                        <p>Solo se usa en poemas o discursos.</p>
+                        <p>Contenido Permitido:</p>
+                        <ul><li>Ninguno</li></ul>
+                        <p>Categorías a las que pertenece:</p>
+                        <ul>
+                            <li>Contenido Fluido</li>
+                            <li>Contenido de Fraseo</li>
+                        </ul>
+                    </td>
+                    <td class="Ejemplo">
+                        <pre><code>
+Mozilla&lt;br/&gt; 331 E. Evelyn Avenue&lt;br/&gt;
+Mountain View, CA&lt;br/&gt; 94041&lt;br/&gt; USA&lt;br/&gt;
+
+                        </code></pre>
+                        <p style="font-weight: bold;">Resultado:</p>
+                        <div class="Implementacion">
+                            Mozilla<br />
+                            331 E. Evelyn Avenue<br />
+                            Mountain View, CA<br />
+                            94041<br />
+                            USA<br />                            
+                        </div>
+                    </td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/br" target="_blank">Informacion adicional</a></td>
+                </tr>
+                <tr id="button">
+                    <th class="Elemento" scope="row">&lt;button&gt;</th>
+                    <td class="Descripcion">
+                        <p>Es un elemento interactivo activado por el usuario. Una vez actuvado, realiza una acción como enviar un formulario</p>
+                        <p>Contenido Permitido:</p>
+                        <ul><li>Contenido Redactado</li></ul>
+                        <p>Categorías a las que pertenece:</p>
+                        <ul>
+                            <li>Contenido Fluido</li>
+                            <li>Contenido de Redacción</li>
+                            <li>Contenido Interactivo</li>
+                        </ul>
+                    </td>
+                    <td class="Ejemplo">
+                        <pre><code>
+&lt;button class="favorite styled" type="button"&gt;Add to favorites&lt;/button&gt;
+                        </code></pre>
+                        <p style="font-weight: bold;">Resultado:</p>
+                        <div class="Implementacion">
+                            <button class="favorite styled" type="button">Add to favorites</button>
+                        </div>
+                    </td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button" target="_blank">Informacion adicional</a></td>
+                </tr>
+                <tr id="canvas">
+                    <th class="Elemento" scope="row">&lt;canvas&gt;</th>
+                    <td class="Descripcion"></td>
+                    <td class="Ejemplo"><pre><code>
+                    
+                    </code></pre></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/canvas" target="_blank">Informacion adicional</a></td>
+                </tr>
+                <tr id="caption">
+                    <th class="Elemento" scope="row">&lt;caption&gt;</th>
+                    <td class="Descripcion"></td>
+                    <td class="Ejemplo"><pre><code>
+                    
+                    </code></pre></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/caption" target="_blank">Informacion adicional</a></td>
+                </tr>
+                <tr id="center">
+                    <th class="Elemento" scope="row">&lt;center&gt;</th>
+                    <td class="Descripcion"></td>
+                    <td class="Ejemplo"><pre><code>
+                    
+                    </code></pre></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/center" target="_blank">Informacion adicional</a></td>
+                </tr>
+                <tr id="cite">
+                    <th class="Elemento" scope="row">&lt;cite&gt;</th>
+                    <td class="Descripcion"></td>
+                    <td class="Ejemplo"><pre><code>
+                    
+                    </code></pre></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/cite" target="_blank">Informacion adicional</a></td>
+                </tr>
+                <tr id="code">
+                    <th class="Elemento" scope="row">&lt;code&gt;</th>
+                    <td class="Descripcion"></td>
+                    <td class="Ejemplo"><pre><code>
+                    
+                    </code></pre></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/code" target="_blank">Informacion adicional</a></td>
+                </tr>
+                <tr id="col">
+                    <th class="Elemento" scope="row">&lt;col&gt;</th>
+                    <td class="Descripcion"></td>
+                    <td class="Ejemplo"><pre><code>
+                    
+                    </code></pre></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/col" target="_blank">Informacion adicional</a></td>
+                </tr>
+                <tr id="colgroup">
+                    <th class="Elemento" scope="row">&lt;colgroup&gt;</th>
+                    <td class="Descripcion"></td>
+                    <td class="Ejemplo"><pre><code>
+                    
+                    </code></pre></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/colgroup" target="_blank">Informacion adicional</a></td>
+                </tr>
+                <tr id="data">
+                    <th class="Elemento" scope="row">&lt;data&gt;</th>
+                    <td class="Descripcion"></td>
+                    <td class="Ejemplo"><pre><code>
+                    
+                    </code></pre></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/data" target="_blank">Informacion adicional</a></td>
+                </tr>
+                <tr id="datalist">
+                    <th class="Elemento" scope="row">&lt;datalist&gt;</th>
+                    <td class="Descripcion"></td>
+                    <td class="Ejemplo"><pre><code>
+                    
+                    </code></pre></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/datalist" target="_blank">Informacion adicional</a></td>
+                </tr>
+                <tr id="dd">
+                    <th class="Elemento" scope="row">&lt;dd&gt;</th>
+                    <td class="Descripcion"></td>
+                    <td class="Ejemplo"><pre><code>
+                    
+                    </code></pre></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dd" target="_blank">Informacion adicional</a></td>
+                </tr>
+                <tr id="del">
+                    <th class="Elemento" scope="row">&lt;del&gt;</th>
+                    <td class="Descripcion"></td>
+                    <td class="Ejemplo"><pre><code>
+                    
+                    </code></pre></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/del" target="_blank">Informacion adicional</a></td>
+                </tr>
+                <tr id="details">
+                    <th class="Elemento" scope="row">&lt;details&gt;</th>
+                    <td class="Descripcion"></td>
+                    <td class="Ejemplo"><pre><code>
+                    
+                    </code></pre></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details" target="_blank">Informacion adicional</a></td>
+                </tr>
+                <tr id="dfn">
+                    <th class="Elemento" scope="row">&lt;dfn&gt;</th>
+                    <td class="Descripcion"></td>
+                    <td class="Ejemplo"><pre><code>
+                    
+                    </code></pre></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dfn" target="_blank">Informacion adicional</a></td>
+                </tr>
+                <tr id="dialog">
+                    <th class="Elemento" scope="row">&lt;dialog&gt;</th>
+                    <td class="Descripcion"></td>
+                    <td class="Ejemplo"><pre><code>
+                    
+                    </code></pre></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog" target="_blank">Informacion adicional</a></td>
+                </tr>
+                <tr id="dir">
+                    <th class="Elemento" scope="row">&lt;dir&gt;</th>
+                    <td class="Descripcion"></td>
+                    <td class="Ejemplo"><pre><code>
+                    
+                    </code></pre></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dir" target="_blank">Informacion adicional</a></td>
+                </tr>
+                <tr id="div">
+                    <th class="Elemento" scope="row">&lt;div&gt;</th>
+                    <td class="Descripcion"></td>
+                    <td class="Ejemplo"><pre><code>
+                    
+                    </code></pre></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div" target="_blank">Informacion adicional</a></td>
+                </tr>
+                <tr id="dl">
+                    <th class="Elemento" scope="row">&lt;dl&gt;</th>
+                    <td class="Descripcion"></td>
+                    <td class="Ejemplo"><pre><code>
+                    
+                    </code></pre></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dl" target="_blank">Informacion adicional</a></td>
+                </tr>
+                <tr id="dt">
+                    <th class="Elemento" scope="row">&lt;dt&gt;</th>
+                    <td class="Descripcion"></td>
+                    <td class="Ejemplo"><pre><code>
+                    
+                    </code></pre></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dt" target="_blank">Informacion adicional</a></td>
+                </tr>
+                <tr id="em">
+                    <th class="Elemento" scope="row">&lt;em&gt;</th>
+                    <td class="Descripcion"></td>
+                    <td class="Ejemplo"><pre><code>
+                    
+                    </code></pre></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/em" target="_blank">Informacion adicional</a></td>
+                </tr>
+                <tr id="embed">
+                    <th class="Elemento" scope="row">&lt;embed&gt;</th>
+                    <td class="Descripcion"></td>
+                    <td class="Ejemplo"><pre><code>
+                    
+                    </code></pre></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/embed" target="_blank">Informacion adicional</a></td>
+                </tr>
+                <tr id="fieldset">
+                    <th class="Elemento" scope="row">&lt;fieldset&gt;</th>
+                    <td class="Descripcion"></td>
+                    <td class="Ejemplo"><pre><code>
+                    
+                    </code></pre></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset" target="_blank">Informacion adicional</a></td>
+                </tr>
+                <tr id="figcaption">
+                    <th class="Elemento" scope="row">&lt;figcaption&gt;</th>
+                    <td class="Descripcion"></td>
+                    <td class="Ejemplo"><pre><code>
+                    
+                    </code></pre></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figcaption" target="_blank">Informacion adicional</a></td>
+                </tr>
+                <tr id="figure">
+                    <th class="Elemento" scope="row">&lt;figure&gt;</th>
+                    <td class="Descripcion"></td>
+                    <td class="Ejemplo"><pre><code>
+                    
+                    </code></pre></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure" target="_blank">Informacion adicional</a></td>
+                </tr>
+                <tr id="font">
+                    <th class="Elemento" scope="row">&lt;font&gt;</th>
+                    <td class="Descripcion"></td>
+                    <td class="Ejemplo"><pre><code>
+                    
+                    </code></pre></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/font" target="_blank">Informacion adicional</a></td>
+                </tr>
+                <tr id="footer">
+                    <th class="Elemento" scope="row">&lt;footer&gt;</th>
+                    <td class="Descripcion"></td>
+                    <td class="Ejemplo"><pre><code>
+                    
+                    </code></pre></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/footer" target="_blank">Informacion adicional</a></td>
+                </tr>
+                <tr id="form">
+                    <th class="Elemento" scope="row">&lt;form&gt;</th>
+                    <td class="Descripcion"></td>
+                    <td class="Ejemplo"><pre><code>
+                    
+                    </code></pre></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form" target="_blank">Informacion adicional</a></td>
+                </tr>
+                <tr id="frame">
+                    <th class="Elemento" scope="row">&lt;frame&gt;</th>
+                    <td class="Descripcion"></td>
+                    <td class="Ejemplo"><pre><code>
+                    
+                    </code></pre></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/frame" target="_blank">Informacion adicional</a></td>
+                </tr>
+                <tr id="frameset">
+                    <th class="Elemento" scope="row">&lt;frameset&gt;</th>
+                    <td class="Descripcion"></td>
+                    <td class="Ejemplo"><pre><code>
+                    
+                    </code></pre></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/frameset" target="_blank">Informacion adicional</a></td>
+                </tr>
+                <tr id="h1">
+                    <th class="Elemento" scope="row">&lt;h1&gt;</th>
+                    <td class="Descripcion"></td>
+                    <td class="Ejemplo"><pre><code>
+                    
+                    </code></pre></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/h1" target="_blank">Informacion adicional</a></td>
+                </tr>
+                <tr id="head">
+                    <th class="Elemento" scope="row">&lt;head&gt;</th>
+                    <td class="Descripcion"></td>
+                    <td class="Ejemplo"><pre><code>
+                    
+                    </code></pre></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/head" target="_blank">Informacion adicional</a></td>
+                </tr>
+                <tr id="header">
+                    <th class="Elemento" scope="row">&lt;header&gt;</th>
+                    <td class="Descripcion"></td>
+                    <td class="Ejemplo"><pre><code>
+                    
+                    </code></pre></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/header" target="_blank">Informacion adicional</a></td>
+                </tr>
+                <tr id="hgroup">
+                    <th class="Elemento" scope="row">&lt;hgroup&gt;</th>
+                    <td class="Descripcion"></td>
+                    <td class="Ejemplo"><pre><code>
+                    
+                    </code></pre></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hgroup" target="_blank">Informacion adicional</a></td>
+                </tr>
+                <tr id="hr">
+                    <th class="Elemento" scope="row">&lt;hr&gt;</th>
+                    <td class="Descripcion"></td>
+                    <td class="Ejemplo"><pre><code>
+                    
+                    </code></pre></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hr" target="_blank">Informacion adicional</a></td>
+                </tr>
+                <tr id="html">
+                    <th class="Elemento" scope="row">&lt;html&gt;</th>
+                    <td class="Descripcion"></td>
+                    <td class="Ejemplo"><pre><code>
+                    
+                    </code></pre></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/html" target="_blank">Informacion adicional</a></td>
+                </tr>
+                <tr id="i">
+                    <th class="Elemento" scope="row">&lt;i&gt;</th>
+                    <td class="Descripcion"></td>
+                    <td class="Ejemplo"><pre><code>
+                    
+                    </code></pre></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/i" target="_blank">Informacion adicional</a></td>
+                </tr>
+                <tr id="iframe">
+                    <th class="Elemento" scope="row">&lt;iframe&gt;</th>
+                    <td class="Descripcion"></td>
+                    <td class="Ejemplo"><pre><code>
+                    
+                    </code></pre></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe" target="_blank">Informacion adicional</a></td>
+                </tr>
+                <tr id="image">
+                    <th class="Elemento" scope="row">&lt;image&gt;</th>
+                    <td class="Descripcion"></td>
+                    <td class="Ejemplo"><pre><code>
+                    
+                    </code></pre></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/image" target="_blank">Informacion adicional</a></td>
+                </tr>
+                <tr id="img">
+                    <th class="Elemento" scope="row">&lt;img&gt;</th>
+                    <td class="Descripcion"></td>
+                    <td class="Ejemplo"><pre><code>
+                    
+                    </code></pre></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img" target="_blank">Informacion adicional</a></td>
+                </tr>
+                <tr id="input">
+                    <th class="Elemento" scope="row">&lt;input&gt;</th>
+                    <td class="Descripcion"></td>
+                    <td class="Ejemplo"><pre><code>
+                    
+                    </code></pre></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input" target="_blank">Informacion adicional</a></td>
+                </tr>
+                <tr id="ins">
+                    <th class="Elemento" scope="row">&lt;ins&gt;</th>
+                    <td class="Descripcion"></td>
+                    <td class="Ejemplo"><pre><code>
+                    
+                    </code></pre></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ins" target="_blank">Informacion adicional</a></td>
+                </tr>
+                <tr id="kbd">
+                    <th class="Elemento" scope="row">&lt;kbd&gt;</th>
+                    <td class="Descripcion"></td>
+                    <td class="Ejemplo"><pre><code>
+                    
+                    </code></pre></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/kbd" target="_blank">Informacion adicional</a></td>
+                </tr>
+                <tr id="label">
+                    <th class="Elemento" scope="row">&lt;label&gt;</th>
+                    <td class="Descripcion"></td>
+                    <td class="Ejemplo"><pre><code>
+                    
+                    </code></pre></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label" target="_blank">Informacion adicional</a></td>
+                </tr>
+                <tr id="legend">
+                    <th class="Elemento" scope="row">&lt;legend&gt;</th>
+                    <td class="Descripcion"></td>
+                    <td class="Ejemplo"><pre><code>
+                    
+                    </code></pre></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/legend" target="_blank">Informacion adicional</a></td>
+                </tr>
+                <tr id="li">
+                    <th class="Elemento" scope="row">&lt;li&gt;</th>
+                    <td class="Descripcion"></td>
+                    <td class="Ejemplo"><pre><code>
+                    
+                    </code></pre></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li" target="_blank">Informacion adicional</a></td>
+                </tr>
+                <tr id="link">
+                    <th class="Elemento" scope="row">&lt;link&gt;</th>
+                    <td class="Descripcion"></td>
+                    <td class="Ejemplo"><pre><code>
+                    
+                    </code></pre></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link" target="_blank">Informacion adicional</a></td>
+                </tr>
+                <tr id="main">
+                    <th class="Elemento" scope="row">&lt;main&gt;</th>
+                    <td class="Descripcion"></td>
+                    <td class="Ejemplo"><pre><code>
+                    
+                    </code></pre></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/main" target="_blank">Informacion adicional</a></td>
+                </tr>
+                <tr id="map">
+                    <th class="Elemento" scope="row">&lt;map&gt;</th>
+                    <td class="Descripcion"></td>
+                    <td class="Ejemplo"><pre><code>
+                    
+                    </code></pre></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/map" target="_blank">Informacion adicional</a></td>
+                </tr>
+                <tr id="mark">
+                    <th class="Elemento" scope="row">&lt;mark&gt;</th>
+                    <td class="Descripcion"></td>
+                    <td class="Ejemplo"><pre><code>
+                    
+                    </code></pre></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/mark" target="_blank">Informacion adicional</a></td>
+                </tr>
+                <tr id="marquee">
+                    <th class="Elemento" scope="row">&lt;marquee&gt;</th>
+                    <td class="Descripcion"></td>
+                    <td class="Ejemplo"><pre><code>
+                    
+                    </code></pre></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/marquee" target="_blank">Informacion adicional</a></td>
+                </tr>
+                <tr id="menu">
+                    <th class="Elemento" scope="row">&lt;menu&gt;</th>
+                    <td class="Descripcion"></td>
+                    <td class="Ejemplo"><pre><code>
+                    
+                    </code></pre></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/menu" target="_blank">Informacion adicional</a></td>
+                </tr>
+                <tr id="menuitem">
+                    <th class="Elemento" scope="row">&lt;menuitem&gt;</th>
+                    <td class="Descripcion"></td>
+                    <td class="Ejemplo"><pre><code>
+                    
+                    </code></pre></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/menuitem" target="_blank">Informacion adicional</a></td>
+                </tr>
+                <tr id="meta">
+                    <th class="Elemento" scope="row">&lt;meta&gt;</th>
+                    <td class="Descripcion"></td>
+                    <td class="Ejemplo"><pre><code>
+                    
+                    </code></pre></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta" target="_blank">Informacion adicional</a></td>
+                </tr>
+                <tr id="meter">
+                    <th class="Elemento" scope="row">&lt;meter&gt;</th>
+                    <td class="Descripcion"></td>
+                    <td class="Ejemplo"><pre><code>
+                    
+                    </code></pre></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meter" target="_blank">Informacion adicional</a></td>
+                </tr>
+                <tr id="nav">
+                    <th class="Elemento" scope="row">&lt;nav&gt;</th>
+                    <td class="Descripcion"></td>
+                    <td class="Ejemplo"><pre><code>
+                    
+                    </code></pre></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav" target="_blank">Informacion adicional</a></td>
+                </tr>
+                <tr id="nobr">
+                    <th class="Elemento" scope="row">&lt;nobr&gt;</th>
+                    <td class="Descripcion"></td>
+                    <td class="Ejemplo"><pre><code>
+                    
+                    </code></pre></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nobr" target="_blank">Informacion adicional</a></td>
+                </tr>
+                <tr id="noembed">
+                    <th class="Elemento" scope="row">&lt;noembed&gt;</th>
+                    <td class="Descripcion"></td>
+                    <td class="Ejemplo"><pre><code>
+                    
+                    </code></pre></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/noembed" target="_blank">Informacion adicional</a></td>
+                </tr>
+                <tr id="noframes">
+                    <th class="Elemento" scope="row">&lt;noframes&gt;</th>
+                    <td class="Descripcion"></td>
+                    <td class="Ejemplo"><pre><code>
+                    
+                    </code></pre></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/noframes" target="_blank">Informacion adicional</a></td>
+                </tr>
+                <tr id="noscript">
+                    <th class="Elemento" scope="row">&lt;noscript&gt;</th>
+                    <td class="Descripcion"></td>
+                    <td class="Ejemplo"><pre><code>
+                    
+                    </code></pre></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/noscript" target="_blank">Informacion adicional</a></td>
+                </tr>
+                <tr id="object">
+                    <th class="Elemento" scope="row">&lt;object&gt;</th>
+                    <td class="Descripcion"></td>
+                    <td class="Ejemplo"><pre><code>
+                    
+                    </code></pre></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/object" target="_blank">Informacion adicional</a></td>
+                </tr>
+                <tr id="ol">
+                    <th class="Elemento" scope="row">&lt;ol&gt;</th>
+                    <td class="Descripcion"></td>
+                    <td class="Ejemplo"><pre><code>
+                    
+                    </code></pre></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ol" target="_blank">Informacion adicional</a></td>
+                </tr>
+                <tr id="optgroup">
+                    <th class="Elemento" scope="row">&lt;optgroup&gt;</th>
+                    <td class="Descripcion"></td>
+                    <td class="Ejemplo"><pre><code>
+                    
+                    </code></pre></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/optgroup" target="_blank">Informacion adicional</a></td>
+                </tr>
+                <tr id="option">
+                    <th class="Elemento" scope="row">&lt;option&gt;</th>
+                    <td class="Descripcion"></td>
+                    <td class="Ejemplo"><pre><code>
+                    
+                    </code></pre></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/option" target="_blank">Informacion adicional</a></td>
+                </tr>
+                <tr id="output">
+                    <th class="Elemento" scope="row">&lt;output&gt;</th>
+                    <td class="Descripcion"></td>
+                    <td class="Ejemplo"><pre><code>
+                    
+                    </code></pre></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/output" target="_blank">Informacion adicional</a></td>
+                </tr>
+                <tr id="p">
+                    <th class="Elemento" scope="row">&lt;p&gt;</th>
+                    <td class="Descripcion"></td>
+                    <td class="Ejemplo"><pre><code>
+                    
+                    </code></pre></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p" target="_blank">Informacion adicional</a></td>
+                </tr>
+                <tr id="param">
+                    <th class="Elemento" scope="row">&lt;param&gt;</th>
+                    <td class="Descripcion"></td>
+                    <td class="Ejemplo"><pre><code>
+                    
+                    </code></pre></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/param" target="_blank">Informacion adicional</a></td>
+                </tr>
+                <tr id="picture">
+                    <th class="Elemento" scope="row">&lt;picture&gt;</th>
+                    <td class="Descripcion"></td>
+                    <td class="Ejemplo"><pre><code>
+                    
+                    </code></pre></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/picture" target="_blank">Informacion adicional</a></td>
+                </tr>
+                <tr id="plaintext">
+                    <th class="Elemento" scope="row">&lt;plaintext&gt;</th>
+                    <td class="Descripcion"></td>
+                    <td class="Ejemplo"><pre><code>
+                    
+                    </code></pre></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/plaintext" target="_blank">Informacion adicional</a></td>
+                </tr>
+                <tr id="portal">
+                    <th class="Elemento" scope="row">&lt;portal&gt;</th>
+                    <td class="Descripcion"></td>
+                    <td class="Ejemplo"><pre><code>
+                    
+                    </code></pre></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/portal" target="_blank">Informacion adicional</a></td>
+                </tr>
+                <tr id="pre">
+                    <th class="Elemento" scope="row">&lt;pre&gt;</th>
+                    <td class="Descripcion"></td>
+                    <td class="Ejemplo"><pre><code>
+                    
+                    </code></pre></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/pre" target="_blank">Informacion adicional</a></td>
+                </tr>
+                <tr id="progress">
+                    <th class="Elemento" scope="row">&lt;progress&gt;</th>
+                    <td class="Descripcion"></td>
+                    <td class="Ejemplo"><pre><code>
+                    
+                    </code></pre></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/progress" target="_blank">Informacion adicional</a></td>
+                </tr>
+                <tr id="q">
+                    <th class="Elemento" scope="row">&lt;q&gt;</th>
+                    <td class="Descripcion"></td>
+                    <td class="Ejemplo"><pre><code>
+                    
+                    </code></pre></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/q" target="_blank">Informacion adicional</a></td>
+                </tr>
+                <tr id="rb">
+                    <th class="Elemento" scope="row">&lt;rb&gt;</th>
+                    <td class="Descripcion"></td>
+                    <td class="Ejemplo"><pre><code>
+                    
+                    </code></pre></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/rb" target="_blank">Informacion adicional</a></td>
+                </tr>
+                <tr id="rp">
+                    <th class="Elemento" scope="row">&lt;rp&gt;</th>
+                    <td class="Descripcion"></td>
+                    <td class="Ejemplo"><pre><code>
+                    
+                    </code></pre></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/rp" target="_blank">Informacion adicional</a></td>
+                </tr>
+                <tr id="rt">
+                    <th class="Elemento" scope="row">&lt;rt&gt;</th>
+                    <td class="Descripcion"></td>
+                    <td class="Ejemplo"><pre><code>
+                    
+                    </code></pre></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/rt" target="_blank">Informacion adicional</a></td>
+                </tr>
+                <tr id="rtc">
+                    <th class="Elemento" scope="row">&lt;rtc&gt;</th>
+                    <td class="Descripcion"></td>
+                    <td class="Ejemplo"><pre><code>
+                    
+                    </code></pre></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/rtc" target="_blank">Informacion adicional</a></td>
+                </tr>
+                <tr id="ruby">
+                    <th class="Elemento" scope="row">&lt;ruby&gt;</th>
+                    <td class="Descripcion"></td>
+                    <td class="Ejemplo"><pre><code>
+                    
+                    </code></pre></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ruby" target="_blank">Informacion adicional</a></td>
+                </tr>
+                <tr id="s">
+                    <th class="Elemento" scope="row">&lt;s&gt;</th>
+                    <td class="Descripcion"></td>
+                    <td class="Ejemplo"><pre><code>
+                    
+                    </code></pre></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/s" target="_blank">Informacion adicional</a></td>
+                </tr>
+                <tr id="samp">
+                    <th class="Elemento" scope="row">&lt;samp&gt;</th>
+                    <td class="Descripcion"></td>
+                    <td class="Ejemplo"><pre><code>
+                    
+                    </code></pre></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/samp" target="_blank">Informacion adicional</a></td>
+                </tr>
+                <tr id="script">
+                    <th class="Elemento" scope="row">&lt;script&gt;</th>
+                    <td class="Descripcion"></td>
+                    <td class="Ejemplo"><pre><code>
+                    
+                    </code></pre></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script" target="_blank">Informacion adicional</a></td>
+                </tr>
+                <tr id="search">
+                    <th class="Elemento" scope="row">&lt;search&gt;</th>
+                    <td class="Descripcion"></td>
+                    <td class="Ejemplo"><pre><code>
+                    
+                    </code></pre></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/search" target="_blank">Informacion adicional</a></td>
+                </tr>
+                <tr id="section">
+                    <th class="Elemento" scope="row">&lt;section&gt;</th>
+                    <td class="Descripcion"></td>
+                    <td class="Ejemplo"><pre><code>
+                    
+                    </code></pre></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/section" target="_blank">Informacion adicional</a></td>
+                </tr>
+                <tr id="select">
+                    <th class="Elemento" scope="row">&lt;select&gt;</th>
+                    <td class="Descripcion"></td>
+                    <td class="Ejemplo"><pre><code>
+                    
+                    </code></pre></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select" target="_blank">Informacion adicional</a></td>
+                </tr>
+                <tr id="slot">
+                    <th class="Elemento" scope="row">&lt;slot&gt;</th>
+                    <td class="Descripcion"></td>
+                    <td class="Ejemplo"><pre><code>
+                    
+                    </code></pre></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/slot" target="_blank">Informacion adicional</a></td>
+                </tr>
+                <tr id="small">
+                    <th class="Elemento" scope="row">&lt;small&gt;</th>
+                    <td class="Descripcion"></td>
+                    <td class="Ejemplo"><pre><code>
+                    
+                    </code></pre></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/small" target="_blank">Informacion adicional</a></td>
+                </tr>
+                <tr id="source">
+                    <th class="Elemento" scope="row">&lt;source&gt;</th>
+                    <td class="Descripcion"></td>
+                    <td class="Ejemplo"><pre><code>
+                    
+                    </code></pre></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/source" target="_blank">Informacion adicional</a></td>
+                </tr>
+                <tr id="span">
+                    <th class="Elemento" scope="row">&lt;span&gt;</th>
+                    <td class="Descripcion"></td>
+                    <td class="Ejemplo"><pre><code>
+                    
+                    </code></pre></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/span" target="_blank">Informacion adicional</a></td>
+                </tr>
+                <tr id="strike">
+                    <th class="Elemento" scope="row">&lt;strike&gt;</th>
+                    <td class="Descripcion"></td>
+                    <td class="Ejemplo"><pre><code>
+                    
+                    </code></pre></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strike" target="_blank">Informacion adicional</a></td>
+                </tr>
+                <tr id="strong">
+                    <th class="Elemento" scope="row">&lt;strong&gt;</th>
+                    <td class="Descripcion"></td>
+                    <td class="Ejemplo"><pre><code>
+                    
+                    </code></pre></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strong" target="_blank">Informacion adicional</a></td>
+                </tr>
+                <tr id="style">
+                    <th class="Elemento" scope="row">&lt;style&gt;</th>
+                    <td class="Descripcion"></td>
+                    <td class="Ejemplo"><pre><code>
+                    
+                    </code></pre></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/style" target="_blank">Informacion adicional</a></td>
+                </tr>
+                <tr id="sub">
+                    <th class="Elemento" scope="row">&lt;sub&gt;</th>
+                    <td class="Descripcion"></td>
+                    <td class="Ejemplo"><pre><code>
+                    
+                    </code></pre></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/sub" target="_blank">Informacion adicional</a></td>
+                </tr>
+                <tr id="summary">
+                    <th class="Elemento" scope="row">&lt;summary&gt;</th>
+                    <td class="Descripcion"></td>
+                    <td class="Ejemplo"><pre><code>
+                    
+                    </code></pre></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/summary" target="_blank">Informacion adicional</a></td>
+                </tr>
+                <tr id="sup">
+                    <th class="Elemento" scope="row">&lt;sup&gt;</th>
+                    <td class="Descripcion"></td>
+                    <td class="Ejemplo"><pre><code>
+                    
+                    </code></pre></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/sup" target="_blank">Informacion adicional</a></td>
+                </tr>
+                <tr id="table">
+                    <th class="Elemento" scope="row">&lt;table&gt;</th>
+                    <td class="Descripcion"></td>
+                    <td class="Ejemplo"><pre><code>
+                    
+                    </code></pre></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table" target="_blank">Informacion adicional</a></td>
+                </tr>
+                <tr id="tbody">
+                    <th class="Elemento" scope="row">&lt;tbody&gt;</th>
+                    <td class="Descripcion"></td>
+                    <td class="Ejemplo"><pre><code>
+                    
+                    </code></pre></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tbody" target="_blank">Informacion adicional</a></td>
+                </tr>
+                <tr id="td">
+                    <th class="Elemento" scope="row">&lt;td&gt;</th>
+                    <td class="Descripcion"></td>
+                    <td class="Ejemplo"><pre><code>
+                    
+                    </code></pre></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/td" target="_blank">Informacion adicional</a></td>
+                </tr>
+                <tr id="template">
+                    <th class="Elemento" scope="row">&lt;template&gt;</th>
+                    <td class="Descripcion"></td>
+                    <td class="Ejemplo"><pre><code>
+                    
+                    </code></pre></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/template" target="_blank">Informacion adicional</a></td>
+                </tr>
+                <tr id="textarea">
+                    <th class="Elemento" scope="row">&lt;textarea&gt;</th>
+                    <td class="Descripcion"></td>
+                    <td class="Ejemplo"><pre><code>
+                    
+                    </code></pre></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea" target="_blank">Informacion adicional</a></td>
+                </tr>
+                <tr id="tfoot">
+                    <th class="Elemento" scope="row">&lt;tfoot&gt;</th>
+                    <td class="Descripcion"></td>
+                    <td class="Ejemplo"><pre><code>
+                    
+                    </code></pre></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tfoot" target="_blank">Informacion adicional</a></td>
+                </tr>
+                <tr id="th">
+                    <th class="Elemento" scope="row">&lt;th&gt;</th>
+                    <td class="Descripcion"></td>
+                    <td class="Ejemplo"><pre><code>
+                    
+                    </code></pre></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/th" target="_blank">Informacion adicional</a></td>
+                </tr>
+                <tr id="thead">
+                    <th class="Elemento" scope="row">&lt;thead&gt;</th>
+                    <td class="Descripcion"></td>
+                    <td class="Ejemplo"><pre><code>
+                    
+                    </code></pre></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/thead" target="_blank">Informacion adicional</a></td>
+                </tr>
+                <tr id="time">
+                    <th class="Elemento" scope="row">&lt;time&gt;</th>
+                    <td class="Descripcion"></td>
+                    <td class="Ejemplo"><pre><code>
+                    
+                    </code></pre></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/time" target="_blank">Informacion adicional</a></td>
+                </tr>
+                <tr id="title">
+                    <th class="Elemento" scope="row">&lt;title&gt;</th>
+                    <td class="Descripcion"></td>
+                    <td class="Ejemplo"><pre><code>
+                    
+                    </code></pre></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/title" target="_blank">Informacion adicional</a></td>
+                </tr>
+                <tr id="tr">
+                    <th class="Elemento" scope="row">&lt;tr&gt;</th>
+                    <td class="Descripcion"></td>
+                    <td class="Ejemplo"><pre><code>
+                    
+                    </code></pre></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tr" target="_blank">Informacion adicional</a></td>
+                </tr>
+                <tr id="track">
+                    <th class="Elemento" scope="row">&lt;track&gt;</th>
+                    <td class="Descripcion"></td>
+                    <td class="Ejemplo"><pre><code>
+                    
+                    </code></pre></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/track" target="_blank">Informacion adicional</a></td>
+                </tr>
+                <tr id="tt">
+                    <th class="Elemento" scope="row">&lt;tt&gt;</th>
+                    <td class="Descripcion"></td>
+                    <td class="Ejemplo"><pre><code>
+                    
+                    </code></pre></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tt" target="_blank">Informacion adicional</a></td>
+                </tr>
+                <tr id="u">
+                    <th class="Elemento" scope="row">&lt;u&gt;</th>
+                    <td class="Descripcion"></td>
+                    <td class="Ejemplo"><pre><code>
+                    
+                    </code></pre></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/u" target="_blank">Informacion adicional</a></td>
+                </tr>
+                <tr id="ul">
+                    <th class="Elemento" scope="row">&lt;ul&gt;</th>
+                    <td class="Descripcion"></td>
+                    <td class="Ejemplo"><pre><code>
+                    
+                    </code></pre></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul" target="_blank">Informacion adicional</a></td>
+                </tr>
+                <tr id="var">
+                    <th class="Elemento" scope="row">&lt;var&gt;</th>
+                    <td class="Descripcion"></td>
+                    <td class="Ejemplo"><pre><code>
+                    
+                    </code></pre></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/var" target="_blank">Informacion adicional</a></td>
+                </tr>
+                <tr id="video">
+                    <th class="Elemento" scope="row">&lt;video&gt;</th>
+                    <td class="Descripcion"></td>
+                    <td class="Ejemplo"><pre><code>
+                    
+                    </code></pre></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video" target="_blank">Informacion adicional</a></td>
+                </tr>
+                <tr id="wbr">
+                    <th class="Elemento" scope="row">&lt;wbr&gt;</th>
+                    <td class="Descripcion"></td>
+                    <td class="Ejemplo"><pre><code>
+                    
+                    </code></pre></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/wbr" target="_blank">Informacion adicional</a></td>
+                </tr>
+                    
+            </tbody>
+            <tfoot>
+
+            </tfoot>
+        </table>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
