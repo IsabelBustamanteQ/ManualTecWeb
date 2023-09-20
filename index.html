@@ -518,8 +518,8 @@ Mountain View, CA&lt;br/&gt; 94041&lt;br/&gt; USA&lt;br/&gt;
                     </td>
                     <td class="Ejemplo">
                         <pre><code>
-&lt;canvas id="clock" width="150px" height="150px"&gt;
-    &lt;img src="/media/clock.png" width="150px" height="150px" alt="" /&gt;
+&lt;canvas id="sleep" width="150px" height="150px"&gt;
+    &lt;img src="/media/imagen.jpg" width="150px" height="150px" alt="" /&gt;
 &lt;/canvas&gt;
                         </code></pre>
                     </td>
@@ -671,179 +671,539 @@ Mountain View, CA&lt;br/&gt; 94041&lt;br/&gt; USA&lt;br/&gt;
                 </tr>
                 <tr id="colgroup">
                     <th class="Elemento" scope="row">&lt;colgroup&gt;</th>
-                    <td class="Descripcion"></td>
+                    <td class="Descripcion">
+                        <p>Es un elemento que define un grupo de columnas dentro de una tabla</p>
+                        <p>Contenido Permitido:</p>
+                        <ul><li>&lt;col&gt;</li></ul>
+                        <p>Categorías a las que pertenece:</p>
+                        <ul><li>Ninguno</li></ul>
+                    </td>
                     <td class="Ejemplo"><pre><code>
-                    
-                    </code></pre></td>
+&lt;table&gt;
+    &lt;colgroup&gt;
+        &lt;col span="2" class="batman" /&gt;
+    &lt;/colgroup&gt;
+    &lt;tr&gt;
+        &lt;th scope="col"&gt;Batman&lt;/th&gt;
+        &lt;th scope="col"&gt;Robin&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Smarts&lt;/td&gt;
+        &lt;td&gt;Dex, acrobat&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+                        </code></pre>
+                        <p class="Resultado">Resultado</p>
+                        <div class="Implementacion">
+                            <table class="TEjemplo">
+                                <colgroup>
+                                    <col span="2" class="batman" />
+                                </colgroup>
+                                <tr>
+                                    <th scope="col">Batman</th>
+                                    <th scope="col">Robin</th>
+                                </tr>
+                                <tr>
+                                    <td>Smarts</td>
+                                    <td>Dex, acrobat</td>
+                                </tr>
+                            </table>
+                        </div>                    
+                    </td>
                     <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/colgroup" target="_blank">Informacion adicional</a></td>
                 </tr>
                 <tr id="data">
                     <th class="Elemento" scope="row">&lt;data&gt;</th>
-                    <td class="Descripcion"></td>
+                    <td class="Descripcion">
+                        <p>Vincula un contenido determinado con una traducción legible por máquina</p>
+                        <p>Contenido Permitido:</p>
+                        <ul><li>Contenido de Fraseo</li></ul>
+                        <p>Categorías a las que pertenece:</p>
+                        <ul>
+                            <li>Contenido Fluido</li>
+                            <li>Contenido de Fraseo</li>
+                            <li>Contenido Palpable</li>
+                        </ul>
+                    </td>
                     <td class="Ejemplo"><pre><code>
-                    
-                    </code></pre></td>
+&lt;p&gt;New Products:&lt;/p&gt;
+&lt;ul&gt;
+    &lt;li&gt;&lt;data value="398"&gt;Mini Ketchup&lt;/data&gt;&lt;/li&gt;
+&lt;/ul&gt;
+                        </code></pre>
+                        <p class="Resultado">Resultado:</p>
+                        <div class="Implementacion">
+                            <p>New Products:</p>
+                            <ul>
+                                <li><data value="398">Mini Ketchup</data></li>
+                            </ul>
+                        </div>
+                    </td>
                     <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/data" target="_blank">Informacion adicional</a></td>
                 </tr>
                 <tr id="datalist">
                     <th class="Elemento" scope="row">&lt;datalist&gt;</th>
-                    <td class="Descripcion"></td>
+                    <td class="Descripcion">
+                        <p>Contiene un conjunto de elementos que representan opciones permitidas para elegir.</p>
+                        <p>Contenido Permitido:</p>
+                        <ul>
+                            <li>Contenido de Fraseo</li>
+                            <li>&lt;option&gt;</li>
+                        </ul>
+                        <p>Categorías a las que pertenece:</p>
+                        <ul>
+                            <li>Contenido Fluido</li>
+                            <li>Contenido de Fraseo</li>
+                        </ul>
+                    </td>
                     <td class="Ejemplo"><pre><code>
-                    
-                    </code></pre></td>
+&lt;label for="ice-cream-choice"&gt;Choose a flavor:&lt;/label&gt;
+&lt;input list="ice-cream-flavors" id="ice-cream-choice" name="ice-cream-choice" /&gt;
+
+&lt;datalist id="ice-cream-flavors"&gt;
+    &lt;option value="Chocolate"&gt;&lt;/option&gt;
+    &lt;option value="Coconut"&gt;&lt;/option&gt;
+    &lt;option value="Mint"&gt;&lt;/option&gt;
+    &lt;option value="Strawberry"&gt;&lt;/option&gt;
+    &lt;option value="Vanilla"&gt;&lt;/option&gt;
+&lt;/datalist&gt;
+                        </code></pre>
+                        <p class="Resultado">Resultado:</p>
+                        <div class="Implementacion">
+                            <label for="ice-cream-choice">Choose a flavor:</label>
+                            <input list="ice-cream-flavors" id="ice-cream-choice" name="ice-cream-choice" />
+                            
+                            <datalist id="ice-cream-flavors">
+                              <option value="Chocolate"></option>
+                              <option value="Coconut"></option>
+                              <option value="Mint"></option>
+                              <option value="Strawberry"></option>
+                              <option value="Vanilla"></option>
+                            </datalist>                            
+                        </div>
+                    </td>
                     <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/datalist" target="_blank">Informacion adicional</a></td>
                 </tr>
                 <tr id="dd">
                     <th class="Elemento" scope="row">&lt;dd&gt;</th>
-                    <td class="Descripcion"></td>
+                    <td class="Descripcion">
+                        <p>Proporciona una descripción, definición o valor del término anterior en una lista de descripción</p>
+                        <p>Contenido Permitido:</p>
+                        <ul><li>Contenido Fluido</li></ul>
+                        <p>Categorías a las que pertenece:</p>
+                        <ul><li>Ninguno</li></ul>
+                    </td>
                     <td class="Ejemplo"><pre><code>
-                    
-                    </code></pre></td>
+&lt;dl&gt;
+    &lt;dt&gt;Beast of Bodmin&lt;/dt&gt;
+    &lt;dd&gt;A large feline inhabiting Bodmin Moor.&lt;/dd&gt;
+&lt;/dl&gt; 
+                        </code></pre>
+                        <p class="Resultado">Resultado:</p>
+                        <div class="Implementacion">
+                            <dl>
+                              <dt>Beast of Bodmin</dt>
+                              <dd>A large feline inhabiting Bodmin Moor.</dd>
+                            </dl>                                    
+                        </div>
+                    </td>
                     <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dd" target="_blank">Informacion adicional</a></td>
                 </tr>
                 <tr id="del">
                     <th class="Elemento" scope="row">&lt;del&gt;</th>
-                    <td class="Descripcion"></td>
+                    <td class="Descripcion">
+                        <p>Representa un rango de texto que ha sido eliminado. Para representar "cambios de seguimiento".</p>
+                        <p>Contenido Permitido:</p>
+                        <ul><li>Contenido Transparente</li></ul>
+                        <p>Categorías a las que pertenece:</p>
+                        <ul>
+                            <li>Contenido de Fraseo</li>
+                            <li>Contenido Fluido</li>
+                        </ul>
+                    </td>
                     <td class="Ejemplo"><pre><code>
-                    
-                    </code></pre></td>
+&lt;p&gt; Aquí tenemos un ejemplo de &lt;del&gt;Texto Eliminado&lt;/del&gt;&lt;/p&gt;
+                        </code></pre>
+                        <p class="Resultado">Resultado:</p>
+                        <div class="Implementacion">
+                            <p> Aquí tenemos un ejemplo de <del>Texto Eliminado</del></p>
+                        </div>
+                    </td>
                     <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/del" target="_blank">Informacion adicional</a></td>
                 </tr>
                 <tr id="details">
                     <th class="Elemento" scope="row">&lt;details&gt;</th>
-                    <td class="Descripcion"></td>
+                    <td class="Descripcion">
+                        <p>Crea un widget de divulgación en el que la información solo es visible cuando está "abierto".</p>
+                        <p>Contenido Permitido:</p>
+                        <ul>
+                            <li>&lt;sumnmary&gt; seguido de Contenido Fluido</li>
+                        </ul>
+                        <p>Categorías a las que pertenece:</p>
+                        <ul>
+                            <li>Contenido Fluido</li>
+                            <li>Root Seleccionador</li>
+                            <li>Contenido Interactivo</li>
+                            <li>Contenido Palpable</li>
+                        </ul>
+                    </td>
                     <td class="Ejemplo"><pre><code>
-                    
-                    </code></pre></td>
+&lt;details&gt;
+    &lt;summary&gt;Details&lt;/summary&gt;
+    &lt;p&gt;Something small enough to escape casual notice.&lt;/p&gt;
+&lt;/details&gt;
+                        </code></pre>
+                        <p class="Resultado">Resultado:</p>
+                        <div class="Implementacion">
+                            <details>
+                                <summary>Details</summary>
+                                <p>Something small enough to escape casual notice.</p>
+                            </details>
+                        </div>
+                    </td>
                     <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details" target="_blank">Informacion adicional</a></td>
                 </tr>
                 <tr id="dfn">
                     <th class="Elemento" scope="row">&lt;dfn&gt;</th>
-                    <td class="Descripcion"></td>
+                    <td class="Descripcion">
+                        <p>Se utiliza para indicar el término que se defiine dentro de una frase u oración de definición.</p>
+                        <p>Contenido Permitido:</p>
+                        <ul><li>Contenido de Fraseo</li></ul>
+                        <p>Categorías a las que pertenece:</p>
+                        <ul>
+                            <li>Contenido Fluido</li>
+                            <li>Contenido de Fraseo</li>
+                            <li>Contenido Palpable</li>
+                        </ul>
+                    </td>
                     <td class="Ejemplo"><pre><code>
-                    
-                    </code></pre></td>
+&lt;p&gt;A &lt;dfn id="def-validator"&gt;validator&lt;/dfn&gt; is a program that checks for syntax errors in code or documents.&lt;/p&gt;
+                        </code></pre>
+                        <p class="Resultado">Resultado:</p>
+                        <div class="Implementacion">
+                            <p>A <dfn id="def-validator">validator</dfn> is a program that checks for syntax errors in code or documents.</p>
+                        </div>
+                    </td>
                     <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dfn" target="_blank">Informacion adicional</a></td>
                 </tr>
                 <tr id="dialog">
                     <th class="Elemento" scope="row">&lt;dialog&gt;</th>
-                    <td class="Descripcion"></td>
+                    <td class="Descripcion">
+                        <p>Representa un cuadro de diálogo u otro componente interactivo.</p>
+                        <p>Contenido Permitido:</p>
+                        <ul><li>Contenido Fluido</li></ul>
+                        <p>Categorías a las que pertenece:</p>
+                        <ul>
+                            <li>Contenido Fluido</li>
+                            <li>Root de Sección</li>
+                        </ul>
+                    </td>
                     <td class="Ejemplo"><pre><code>
-                    
-                    </code></pre></td>
+&lt;dialog open&gt;
+    &lt;p&gt;Greetings, one and all!&lt;/p&gt;
+    &lt;button&gt;OK&lt;/button&gt;
+&lt;/dialog&gt;
+                        </code></pre>
+                        <p class="Resultado">Resultado:</p>
+                        <div class="Implementacion">
+                            <dialog open>
+                                <p>Greetings, one and all!</p>
+                                <button>OK</button>
+                            </dialog>
+                        </div>
+                    </td>
                     <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog" target="_blank">Informacion adicional</a></td>
-                </tr>
-                <tr id="dir">
-                    <th class="Elemento" scope="row">&lt;dir&gt;</th>
-                    <td class="Descripcion"></td>
-                    <td class="Ejemplo"><pre><code>
-                    
-                    </code></pre></td>
-                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dir" target="_blank">Informacion adicional</a></td>
                 </tr>
                 <tr id="div">
                     <th class="Elemento" scope="row">&lt;div&gt;</th>
-                    <td class="Descripcion"></td>
+                    <td class="Descripcion">
+                        <p>Es un elemento contenedor genérico para contenido fluido. Abarca toda el espacio de la línea.</p>
+                        <p>Contenido Permitido:</p>
+                        <ul><li>Contenido Fluido</li></ul>
+                        <p>Categorías a las que pertenece:</p>
+                        <ul>
+                            <li>Contenido Fluido</li>
+                            <li>Contenido Palpable</li>
+                        </ul>
+                    </td>
                     <td class="Ejemplo"><pre><code>
-                    
-                    </code></pre></td>
+ &lt;div&gt;
+    &lt;p&gt;Contenido dentro de un div&lt;/p&gt;
+ &lt;/div&gt;                   
+                        </code></pre>
+                        <p class="Resultado">Resultado:</p>
+                        <div class="Implementacion">
+                            <div>
+                                <p>Contenido dentro de un div</p>
+                             </div>                   
+                        </div>
+                    </td>
                     <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div" target="_blank">Informacion adicional</a></td>
                 </tr>
                 <tr id="dl">
                     <th class="Elemento" scope="row">&lt;dl&gt;</th>
-                    <td class="Descripcion"></td>
+                    <td class="Descripcion">
+                        <p>Representa una lista de descripción. Incluye una lista de términos y descripciones.</p>
+                        <p>Contenido Permitido:</p>
+                        <ul>
+                            <li>&lt;dt&gt;</li>
+                            <li>&lt;dd&gt;</li>
+                        </ul>
+                        <p>Categorías a las que pertenece:</p>
+                        <ul>
+                            <li>Contenido Fluido</li>
+                            <li>Contenido Palpable</li>
+                        </ul>
+                    </td>
                     <td class="Ejemplo"><pre><code>
-                    
-                    </code></pre></td>
+&lt;dl&gt;
+    &lt;dt&gt;Beast of Bodmin&lt;/dt&gt;
+    &lt;dd&gt;A large feline inhabiting Bodmin Moor.&lt;/dd&gt;
+    
+    &lt;dt&gt;Morgawr&lt;/dt&gt;
+    &lt;dd&gt;A sea serpent.&lt;/dd&gt;
+&lt;/dl&gt;
+                        </code></pre>
+                        <p class="Resultado">Resultado:</p>
+                        <div class="Implementacion">
+                            <dl>
+                                <dt>Beast of Bodmin</dt>
+                                <dd>A large feline inhabiting Bodmin Moor.</dd>
+                              
+                                <dt>Morgawr</dt>
+                                <dd>A sea serpent.</dd>
+                            </dl>
+                        </div>
+                    </td>
                     <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dl" target="_blank">Informacion adicional</a></td>
                 </tr>
                 <tr id="dt">
                     <th class="Elemento" scope="row">&lt;dt&gt;</th>
-                    <td class="Descripcion"></td>
+                    <td class="Descripcion">
+                        <p>Especifica un término en una descripción o lista de descripciones.</p>
+                        <p>Contenido Permitido:</p>
+                        <ul><li>Contenido Fluido</li></ul>
+                        <p>Categorías a las que pertenece</p>
+                        <ul><li>Ninguno</li></ul>
+                    </td>
                     <td class="Ejemplo"><pre><code>
-                    
-                    </code></pre></td>
+&lt;dl&gt;
+    &lt;dt&gt;Beast of Bodmin&lt;/dt&gt;
+    &lt;dd&gt;A large feline inhabiting Bodmin Moor.&lt;/dd&gt;
+&lt;/dl&gt; 
+                        </code></pre>
+                        <p class="Resultado">Resultado:</p>
+                        <div class="Implementacion">
+                            <dl>
+                                <dt>Beast of Bodmin</dt>
+                                <dd>A large feline inhabiting Bodmin Moor.</dd>
+                            </dl>                                    
+                        </div>
+                    </td>
                     <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dt" target="_blank">Informacion adicional</a></td>
                 </tr>
                 <tr id="em">
                     <th class="Elemento" scope="row">&lt;em&gt;</th>
-                    <td class="Descripcion"></td>
+                    <td class="Descripcion">
+                        <p>Marca el texto que tiene énfasis. Puede anidarse para mayor grado de énfasis.</p>
+                        <p>Contenido Permitido:</p>
+                        <ul><li>Contenido de Fraseo</li></ul>
+                        <p>Categorías a las que pertenece:</p>
+                        <ul>
+                            <li>Contenido Fluido</li>
+                            <li>Contenido de Fraseo</li>
+                            <li>Contenido Palpable</li>
+                        </ul>
+                    </td>
                     <td class="Ejemplo"><pre><code>
-                    
-                    </code></pre></td>
+&lt;p&gt;Get out of bed &lt;em&gt;now&lt;/em&gt;!&lt;/p&gt;
+                        </code></pre>
+                        <p class="Resultado">Resultado:</p>
+                        <div class="Implementacion">
+                            <p>Get out of bed <em>now</em>!</p>
+                        </div>
+                    </td>
                     <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/em" target="_blank">Informacion adicional</a></td>
                 </tr>
                 <tr id="embed">
                     <th class="Elemento" scope="row">&lt;embed&gt;</th>
-                    <td class="Descripcion"></td>
+                    <td class="Descripcion">
+                        <p>Incorpora contenido externo(de otra aplicación o fuente) en el punto especificado.</p>
+                        <p>Contenido Permitido:</p>
+                        <ul><li>Ninguno</li></ul>
+                        <p>Categorías a las que pertenece:</p>
+                        <ul>
+                            <li>Contenido Fluido</li>
+                            <li>Contenido de Fraseo</li>
+                            <li>Contenido Incrustado</li>
+                            <li>Contenido Interactivo</li>
+                            <li>Contenido Palpable</li>
+                        </ul>
+                    </td>
                     <td class="Ejemplo"><pre><code>
-                    
-                    </code></pre></td>
+&lt;embed type="video/webm" src="/media/flower.mp4" width="250" height="200" /&gt;
+                        </code></pre>
+                        <p class="Resultado">Resultado:</p>
+                        <div class="Implementacion">
+                            <embed type="video/webm" src="/media/flower.mp4" width="250" height="200" />
+                        </div>
+                    </td>
                     <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/embed" target="_blank">Informacion adicional</a></td>
                 </tr>
                 <tr id="fieldset">
                     <th class="Elemento" scope="row">&lt;fieldset&gt;</th>
-                    <td class="Descripcion"></td>
+                    <td class="Descripcion">
+                        <p>Se usa para agrupar varios controles así como etiquetas dentro de un formulario web.</p>
+                        <p>Contenido Permitido:</p>
+                        <ul><li>&lt;legnd&gt; seguido de Contenido Fluido</li></ul>
+                        <p>Categorías a las que pertenece:</p>
+                        <ul>
+                            <li>Contenido Fluido</li>
+                            <li>Root Seleccionador</li>
+                            <li>Listado</li>
+                            <li>Contenido Palpaple</li>
+                            <li>Asociado a la forma</li>
+
+                        </ul>
+                    </td>
                     <td class="Ejemplo"><pre><code>
-                    
-                    </code></pre></td>
+&lt;form action="#"&gt;
+    &lt;fieldset&gt;
+        &lt;legend&gt;Do you agree?&lt;/legend&gt;
+        &lt;input type="checkbox" id="chbx" name="agree" value="Yes!" /&gt;
+        &lt;label for="chbx"&gt;I agree&lt;/label&gt;
+    &lt;/fieldset&gt;
+&lt;/form&gt;
+                        </code></pre>
+                        <p class="Resultado">Resultado:</p>
+                        <div class="Implementacion">
+                            <form action="#">
+                                <fieldset>
+                                  <legend>Do you agree?</legend>
+                                  <input type="checkbox" id="chbx" name="agree" value="Yes!" />
+                                  <label for="chbx">I agree</label>
+                                </fieldset>
+                            </form>
+                        </div>
+                    </td>
                     <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset" target="_blank">Informacion adicional</a></td>
                 </tr>
                 <tr id="figcaption">
                     <th class="Elemento" scope="row">&lt;figcaption&gt;</th>
-                    <td class="Descripcion"></td>
+                    <td class="Descripcion">
+                        <p>Represena el título o leyenda que describe el resto del contenido de su elemento principal.</p>
+                        <p>Contenido Permitido:</p>
+                        <ul><li>Contenido Fluido</li></ul>
+                        <p>Categorías a las que pertenece:</p>
+                        <ul><li>Ninguno</li></ul>
+                    </td>
                     <td class="Ejemplo"><pre><code>
-                    
-                    </code></pre></td>
+&lt;figure&gt;
+    &lt;img src="/media/imagen.jpg" alt="Clock" width="100px"/&gt;
+    &lt;figcaption&gt;Sleep Time&lt;/figcaption&gt;
+&lt;/figure&gt;
+                        </code></pre>
+                        <p class="Resultado">Resultado:</p>
+                        <div class="Implementacion">
+                            <figure>
+                                <img src="/media/imagen.jpg" alt="Clock" width="100px"/>
+                                <figcaption>Sleep Time</figcaption>
+                            </figure>
+                        </div>
+                    </td>
                     <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figcaption" target="_blank">Informacion adicional</a></td>
                 </tr>
                 <tr id="figure">
                     <th class="Elemento" scope="row">&lt;figure&gt;</th>
-                    <td class="Descripcion"></td>
+                    <td class="Descripcion">
+                        <p>Representa un conetenido autónomo, con título opcional y conenido como una sola unidad</p>
+                        <p>Contenido Permitido</p>
+                        <ul>
+                            <li>Contenido Fluido</li>
+                            <li>&lt;figcaption&gt;</li>
+                        </ul>
+                        <p>Categorías a las que pertenece:</p>
+                        <ul>
+                            <li>Contenido Fluido</li>
+                            <li>Contenido Palpable</li>
+                        </ul>
+
+                    </td>
                     <td class="Ejemplo"><pre><code>
-                    
-                    </code></pre></td>
+&lt;figure&gt;
+    &lt;img src="/media/imagen.jpg" alt="Clock" width="100px"/&gt;
+&lt;/figure&gt;
+                        </code></pre>
+                        <p class="Resultado">Resultado:</p>
+                        <div class="Implementacion">
+                            <figure>
+                                <img src="/media/imagen.jpg" alt="Clock" width="100px"/>
+                            </figure>
+                        </div>
+                    </td>
                     <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure" target="_blank">Informacion adicional</a></td>
-                </tr>
-                <tr id="font">
-                    <th class="Elemento" scope="row">&lt;font&gt;</th>
-                    <td class="Descripcion"></td>
-                    <td class="Ejemplo"><pre><code>
-                    
-                    </code></pre></td>
-                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/font" target="_blank">Informacion adicional</a></td>
                 </tr>
                 <tr id="footer">
                     <th class="Elemento" scope="row">&lt;footer&gt;</th>
-                    <td class="Descripcion"></td>
+                    <td class="Descripcion">
+                        <p>Representa el pie de página para el contenido de sección.</p>
+                        <p>Contenido Permitido:</p>
+                        <ul><li>Contenido Fluido</li></ul>
+                        <p>Categorías a las que pertenece:</p>
+                        <ul>
+                            <li>Contenido Fluido</li>
+                            <li>Contenido Palpable</li>
+                        </ul>
+                    </td>
                     <td class="Ejemplo"><pre><code>
-                    
-                    </code></pre></td>
+&lt;article&gt;
+    Esto es un artículo
+    &lt;footer&gt;
+        &lt;p&gt;© Este es el footer del artículo&lt;/p&gt;
+    &lt;/footer&gt;
+&lt;/article&gt;
+                        </code></pre>
+                        <p class="Resultado">Resultado:</p>
+                        <div class="Implementacion">
+                            <article>
+                                Esto es un artículo
+                                <footer>
+                                  <p>© Este es el footer del artículo</p>
+                                </footer>
+                            </article>
+                        </div>
+                    </td>
                     <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/footer" target="_blank">Informacion adicional</a></td>
                 </tr>
                 <tr id="form">
                     <th class="Elemento" scope="row">&lt;form&gt;</th>
-                    <td class="Descripcion"></td>
+                    <td class="Descripcion">
+                        <p>Respresenta una sección del documento que tiene controles interactivos para enviar información (Formulario).</p>
+                        <p>Contenido Permitido:</p>
+                        <ul><li>Contenido Fluido</li></ul>
+                        <p>Categorías a las que pertenece:</p>
+                        <ul>
+                            <li>Contenido Fluido</li>
+                            <li>Contenido Palpable</li>
+                        </ul>
+                    </td>
                     <td class="Ejemplo"><pre><code>
-                    
-                    </code></pre></td>
+&lt;form action="" method="get" class="form-example"&gt;
+    &lt;label for="name"&gt;Enter your name: &lt;/label&gt;
+    &lt;input type="text" name="name" id="name" required /&gt;
+    &lt;input type="submit" value="Subscribe!" /&gt;
+&lt;/form&gt;
+                        </code></pre>
+                        <p class="Resultado">Resultado:</p>
+                        <div class="Implementacion">
+                            <form action="" method="get" class="form-example">
+                              <label for="name">Enter your name: </label>
+                              <input type="text" name="name" id="name" required />
+                              <input type="submit" value="Subscribe!" />
+                            </form>
+                        </div>
+                    </td>
                     <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form" target="_blank">Informacion adicional</a></td>
-                </tr>
-                <tr id="frame">
-                    <th class="Elemento" scope="row">&lt;frame&gt;</th>
-                    <td class="Descripcion"></td>
-                    <td class="Ejemplo"><pre><code>
-                    
-                    </code></pre></td>
-                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/frame" target="_blank">Informacion adicional</a></td>
-                </tr>
-                <tr id="frameset">
-                    <th class="Elemento" scope="row">&lt;frameset&gt;</th>
-                    <td class="Descripcion"></td>
-                    <td class="Ejemplo"><pre><code>
-                    
-                    </code></pre></td>
-                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/frameset" target="_blank">Informacion adicional</a></td>
                 </tr>
                 <tr id="h1">
                     <th class="Elemento" scope="row">&lt;h1&gt;</th>
@@ -853,17 +1213,66 @@ Mountain View, CA&lt;br/&gt; 94041&lt;br/&gt; USA&lt;br/&gt;
                     </code></pre></td>
                     <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/h1" target="_blank">Informacion adicional</a></td>
                 </tr>
+                
+                <tr id="h1-h6">
+                    <th class="Elemento" scope="row">&lt;h1&gt; - &lt;h6&gt;</th>
+                    <td class="Descripcion">
+                        <p>Representan seis niveles de encabezados de sección. Crean un cuadro a nivel de bloque en el diseño.</p>
+                        <p>Contenido Permitido:</p>
+                        <ul><li>Contenido de Fraseo</li></ul>
+                        <p>Categorías a las que pertenece:</p>
+                        <ul>
+                            <li>Contenido Fluido</li>
+                            <li>Contenido de Encabezados</li>
+                            <li>Contenido Palpable</li>
+                        </ul>
+                    </td>
+                    <td class="Ejemplo"><pre><code>
+&lt;h1&gt;Título H1&lt;/h1&gt;
+&lt;h2&gt;Título H2&lt;/h2&gt;
+&lt;h3&gt;Título H3&lt;/h3&gt;
+&lt;h4&gt;Título H4&lt;/h4&gt;
+&lt;h5&gt;Título H5&lt;/h5&gt;
+&lt;h6&gt;Título H6&lt;/h6&gt;
+                        </code></pre>
+                        <p class="Resultado">Resultado:</p>
+                        <div class="Implementacion">
+                            <h1>Título H1</h1>
+                            <h2>Título H2</h2>
+                            <h3>Título H3</h3>
+                            <h4>Título H4</h4>
+                            <h5>Título H5</h5>
+                            <h6>Título H6</h6>
+                        </div>
+                    </td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/h1" target="_blank">Informacion adicional</a></td>
+                </tr>
                 <tr id="head">
                     <th class="Elemento" scope="row">&lt;head&gt;</th>
-                    <td class="Descripcion"></td>
+                    <td class="Descripcion">
+                        <p>Contiene metadatos sobre el documento.</p>
+                        <p>Contenido Permitido:</p>
+                        <ul><li>Metadatos</li></ul>
+                        <p>Categorías a las que pertenece:</p>
+                        <ul><li>Ninguno</li></ul>
+                    </td>
                     <td class="Ejemplo"><pre><code>
-                    
+&lt;!doctype html&gt;
+&lt;html lang="en-US"&gt;
+    &lt;head&gt;
+    &lt;meta charset="UTF-8" /&gt;
+    &lt;meta name="viewport" content="width=device-width" /&gt;
+    &lt;title&gt;Document title&lt;/title&gt;
+    &lt;/head&gt;
+&lt;/html&gt;
                     </code></pre></td>
                     <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/head" target="_blank">Informacion adicional</a></td>
                 </tr>
                 <tr id="header">
                     <th class="Elemento" scope="row">&lt;header&gt;</th>
-                    <td class="Descripcion"></td>
+                    <td class="Descripcion">
+                        <p></p>
+                    </td>
                     <td class="Ejemplo"><pre><code>
                     
                     </code></pre></td>
