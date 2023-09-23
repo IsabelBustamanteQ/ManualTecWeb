@@ -16,6 +16,10 @@
         .Resultado{
             font-weight: bold;
         }
+        #EjemploStyle {
+            color: white;
+            background-color: blueviolet;
+        }
     </style>
 </head>
 <body>
@@ -928,13 +932,19 @@ Mountain View, CA&lt;br/&gt; 94041&lt;br/&gt; USA&lt;br/&gt;
                     <td class="Ejemplo"><pre><code>
  &lt;div&gt;
     &lt;p&gt;Contenido dentro de un div&lt;/p&gt;
+ &lt;/div&gt;
+ &lt;div&gt;
+    &lt;p&gt;Contenido dentro de otro div&lt;/p&gt;
  &lt;/div&gt;                   
                         </code></pre>
                         <p class="Resultado">Resultado:</p>
                         <div class="Implementacion">
                             <div>
                                 <p>Contenido dentro de un div</p>
-                             </div>                   
+                            </div>
+                            <div>
+                                <p>Contenido dentro de otro div</p>
+                            </div>                   
                         </div>
                     </td>
                     <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div" target="_blank">Informacion adicional</a></td>
@@ -2456,50 +2466,123 @@ width="250" height="200"&gt;&lt;/object&gt;
                 </tr>
                 <tr id="span">
                     <th class="Elemento" scope="row">&lt;span&gt;</th>
-                    <td class="Descripcion"></td>
+                    <td class="Descripcion">
+                        <p>Es un contenedor en línea genérico para redactar contenido, que inherentemente no representa nada. Solo ocupa el espacio necesario.</p>
+                        <p>Contenido Permitido:</p>
+                        <ul><li>Contenido de Fraseo</li></ul>
+                        <p>Categorías a las que pertenece:</p>
+                        <ul>
+                            <li>Contenido Fluido</li>
+                            <li>Contenido de Fraseo</li>
+                        </ul>
+                    </td>
                     <td class="Ejemplo"><pre><code>
-                    
-                    </code></pre></td>
+&lt;span&gt;Esto es un Span.&lt;/span&gt;
+&lt;span&gt;Esto es otro Span.&lt;/span&gt;
+                        </code></pre>
+                        <p class="Resultado">Resultado:</p>
+                        <div class="Implementacion">
+                            <span>Esto es un Span.</span>
+                            <span>Esto es otro Span.</span>
+                        </div>
+                    </td>
                     <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/span" target="_blank">Informacion adicional</a></td>
-                </tr>
-                <tr id="strike">
-                    <th class="Elemento" scope="row">&lt;strike&gt;</th>
-                    <td class="Descripcion"></td>
-                    <td class="Ejemplo"><pre><code>
-                    
-                    </code></pre></td>
-                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strike" target="_blank">Informacion adicional</a></td>
                 </tr>
                 <tr id="strong">
                     <th class="Elemento" scope="row">&lt;strong&gt;</th>
-                    <td class="Descripcion"></td>
+                    <td class="Descripcion">
+                        <p>Indica que su contenido es de gran importancia, seriedad o urgencia. Suele mostrarse en negrita.</p>
+                        <p>Contenido Permitido:</p>
+                        <ul><li>Contenido de Fraseo</li></ul>
+                        <p>Categorías a las que pertenece:</p>
+                        <ul>
+                            <li>Contenido Fluido</li>
+                            <li>Contenido de Fraseo</li>
+                            <li>Contenido Palpable</li>
+                        </ul>
+                    </td>
                     <td class="Ejemplo"><pre><code>
-                    
-                    </code></pre></td>
+&lt;p&gt;&lt;strong&gt;Peligro:&lt;/strong&gt; No entrar.&lt;/p&gt;
+                        </code></pre>
+                        <p class="Resultado">Resultado:</p>
+                        <div class="Implementacion">
+                            <p><strong>Peligro:</strong> No entrar.</p>
+                        </div>
+                    </td>
                     <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strong" target="_blank">Informacion adicional</a></td>
                 </tr>
                 <tr id="style">
                     <th class="Elemento" scope="row">&lt;style&gt;</th>
-                    <td class="Descripcion"></td>
+                    <td class="Descripcion">
+                        <p>Contiene informacion de estilo CSS para un documento o parte de un documento.</p>
+                        <p>Contenido Permitido:</p>
+                        <ul><li>Contenido de Texto CSS</li></ul>
+                        <p>Categorías a las que pertenece:</p>
+                        <ul>
+                            <li>Contenido de Metadatos</li>
+                            <li>Contenido Fluido</li>
+                        </ul>
+                    </td>
                     <td class="Ejemplo"><pre><code>
-                    
-                    </code></pre></td>
+&lt;html lang="en-US"&gt;
+    &lt;head&gt;
+        ...
+        &lt;style&gt;
+        #EjemploStyle {
+            color: white;
+            background-color: blueviolet;
+        }
+        &lt;/style&gt;
+        ...
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;div id="EjemploStyle"&gt;Ejemplo de un div con Style&lt;/div&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+                        </code></pre>
+                        <p class="Resultado">Resultado:</p>
+                        <div class="Implementacion">
+                            <div id="EjemploStyle">Ejemplo de un div con Style</div>
+                        </div>
+                    </td>
                     <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/style" target="_blank">Informacion adicional</a></td>
                 </tr>
                 <tr id="sub">
                     <th class="Elemento" scope="row">&lt;sub&gt;</th>
-                    <td class="Descripcion"></td>
+                    <td class="Descripcion">
+                        <p>Especifica texto en línea que debe mostrarse como subíndice únicamente por motivos tipográficos.</p>
+                        <p>Contenido Permitido:</p>
+                        <ul><li>Contenido de Fraseo</li></ul>
+                        <p>Categorías a las que pertenece:</p>
+                        <ul>
+                            <li>Contenido Fluido</li>
+                            <li>Contenido de Fraseo</li>
+                            <li>Contenido Palpable</li>
+                        </ul>
+                    </td>
                     <td class="Ejemplo"><pre><code>
-                    
-                    </code></pre></td>
+&lt;p&gt;C&lt;sub&gt;8&lt;/sub&gt;H&lt;sub&gt;10&lt;/sub&gt;N&lt;sub&gt;4&lt;/sub&gt;O&lt;sub&gt;2&lt;/sub&gt;&lt;/p&gt;
+                        </code></pre>
+                        <p class="Resultado">Resultado:</p>
+                        <div class="Implementacion">
+                            <p>C<sub>8</sub>H<sub>10</sub>N<sub>4</sub>O<sub>2</sub></p>
+                        </div>
+                    </td>
                     <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/sub" target="_blank">Informacion adicional</a></td>
                 </tr>
                 <tr id="summary">
                     <th class="Elemento" scope="row">&lt;summary&gt;</th>
-                    <td class="Descripcion"></td>
+                    <td class="Descripcion">
+                        <p>Especifica un resumen, título o leyenda para el cuadro de divulgación de un elemento.</p>
+                        <p>Contenido Permitido:</p>
+                        <ul><li></li></ul>
+                        <p>Categorías a las que pertenece:</p>
+                    </td>
                     <td class="Ejemplo"><pre><code>
                     
-                    </code></pre></td>
+                        </code></pre>
+                        
+                    </td>
                     <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/summary" target="_blank">Informacion adicional</a></td>
                 </tr>
                 <tr id="sup">
