@@ -2317,43 +2317,141 @@ width="250" height="200"&gt;&lt;/object&gt;
                 <tr id="section">
                     <th class="Elemento" scope="row">&lt;section&gt;</th>
                     <td class="Descripcion">
-                        <p></p>
+                        <p>Representa una sección genérica independiente de un documento, que no tiene un elemento semántico más específico para representarla. Siempre deben tener un título.</p>
+                        <p>Contenido Permitido:</p>
+                        <ul><li>Contenido Fluido</li></ul>
+                        <p>Categorías a las que pertenece:</p>
+                        <ul>
+                            <li>Contenido Fluido</li>
+                            <li>Contenido Seccionado</li>
+                            <li>Contenido Palpable</li>
+                        </ul>
                     </td>
                     <td class="Ejemplo"><pre><code>
-                    
-                    </code></pre></td>
+&lt;section&gt;
+    &lt;h2&gt;Título de Sección&lt;/h2&gt;
+    &lt;p&gt;Contenido de la sección&lt;/p&gt;
+&lt;/section&gt;
+                        </code></pre>
+                        <p class="Resultado">Resultado:</p>
+                        <div class="Implementacion">
+                            <section>
+                                <h2>Título de Sección</h2>
+                                <p>Contenido de la sección</p>
+                            </section>                              
+                        </div>
+                    </td>
                     <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/section" target="_blank">Informacion adicional</a></td>
                 </tr>
                 <tr id="select">
                     <th class="Elemento" scope="row">&lt;select&gt;</th>
-                    <td class="Descripcion"></td>
+                    <td class="Descripcion">
+                        <p>Representa un control que Proporciona un menú de opciones.</p>
+                        <p>Contenido Permitido:</p>
+                        <ul>
+                            <li>&lt;option&gt;</li>
+                            <li>&lt;optgroup&gt;</li>
+                        </ul>
+                        <p>Categorías a las que pertenece:</p>
+                        <ul>
+                            <li>Contenido Fluido</li>
+                            <li>Contenido de Fraseo</li>
+                            <li>Contenido Interactivo</li>
+                            <li>Listado</li>
+                            <li>Contenido Etiquetable</li>
+                        </ul>
+                    </td>
                     <td class="Ejemplo"><pre><code>
-                    
-                    </code></pre></td>
+&lt;select&gt;
+    &lt;option&gt;1&lt;/option&gt;
+    &lt;option&gt;2&lt;/option&gt;
+    &lt;option&gt;3&lt;/option&gt;
+&lt;/select&gt;
+                        </code></pre>
+                        <p class="Resultado">Resultado:</p>
+                        <div class="Implementacion">
+                            <select>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                            </select>
+                        </div>
+                    </td>
                     <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select" target="_blank">Informacion adicional</a></td>
                 </tr>
                 <tr id="slot">
                     <th class="Elemento" scope="row">&lt;slot&gt;</th>
-                    <td class="Descripcion"></td>
+                    <td class="Descripcion">
+                        <p>Es un marcador de posicipon dentro de un componente web que se puede completar con su propio marcado, lo que le permite crear árboles DOM separados y presentarlos juntos.</p>
+                        <p>Contenido Permitido:</p>
+                        <ul><li>Contenido Transparente</li></ul>
+                        <p>Categorías a las que pertenece:</p>
+                        <ul>
+                            <li>Contenido Fluido</li>
+                            <li>Contenido de Fraseo</li>
+                        </ul>
+                    </td>
                     <td class="Ejemplo"><pre><code>
-                    
-                    </code></pre></td>
+&lt;summary&gt;
+    &lt;span class="desc"&gt;&lt;slot name="description"&lt;NEED DESCRIPTION&lt;/slot&gt;&lt;/span&gt;
+&lt;/summary&gt;
+                        </code></pre>
+                        <p  class="Resultado">Resultado</p>
+                        <div class="Implementacion">
+                            <summary>
+                                <span class="desc"><slot name="description">NEED DESCRIPTION</slot></span>
+                            </summary>                    
+                        </div>
+                    </td>
                     <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/slot" target="_blank">Informacion adicional</a></td>
                 </tr>
                 <tr id="small">
                     <th class="Elemento" scope="row">&lt;small&gt;</th>
-                    <td class="Descripcion"></td>
+                    <td class="Descripcion">
+                        <p>Representa comentarios laterales y letra pequeña como derechos de autor y texto legal.</p>
+                        <p>Contenido Permitido:</p>
+                        <ul><li>Contenido de Fraseo</li></ul>
+                        <p>Categorías a las que pertenece:</p>
+                        <ul>
+                            <li>Contenido Fluido</li>
+                            <li>Contenido de Fraseo</li>
+                        </ul>
+                    </td>
                     <td class="Ejemplo"><pre><code>
-                    
-                    </code></pre></td>
+&lt;p&gt;Texto normal. &lt;small&gt;Texto con small.&lt;/small&gt;&lt;/p&gt;
+                        </code></pre>
+                        <p class="Resultado">Resultado:</p>
+                        <div class="Implementacion">
+                            <p>Texto normal. <small>Texto con small.</small></p>
+                        </div>
+                    </td>
                     <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/small" target="_blank">Informacion adicional</a></td>
                 </tr>
                 <tr id="source">
                     <th class="Elemento" scope="row">&lt;source&gt;</th>
-                    <td class="Descripcion"></td>
+                    <td class="Descripcion">
+                        <p>Especifica múltiples recursos multimedia.</p>
+                        <p>Contenido Permitido:</p>
+                        <ul><li>Ninguno</li></ul>
+                        <p>Categorías a las que pertenece:</p>
+                        <li>Ninguno</li>
+                    </td>
                     <td class="Ejemplo"><pre><code>
-                    
-                    </code></pre></td>
+&lt;picture&gt;
+    &lt;source srcset="./media/imagen.jpg" media="(min-width: 800px)" /&gt;
+    &lt;source srcset="./media/imagen2.jpg" media="(min-width: 600px)" /&gt;
+    &lt;img src="./media/imagen2.jpg" alt="Beso" /&gt;
+&lt;/picture&gt; 
+                        </code></pre>
+                        <p class="Resultado">Resultado:</p>
+                        <div class="Implementacion">
+                            <picture>
+                                <source srcset="./media/imagen.jpg" media="(min-width: 800px)" />
+                                <source srcset="./media/imagen2.jpg" media="(min-width: 600px)" />
+                                <img src="./media/imagen2.jpg" alt="Beso" />
+                            </picture>                              
+                        </div>
+                    </td>
                     <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/source" target="_blank">Informacion adicional</a></td>
                 </tr>
                 <tr id="span">
