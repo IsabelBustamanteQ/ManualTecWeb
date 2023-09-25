@@ -1676,7 +1676,7 @@ embed.html?bbox=-0.004017949104309083%2C51.
                     <td class="Descripcion">
                         <p>Se utiliza para definir un mapa de imagen.</p>
                         <p>Contenido Permitido:</p>
-                        <ul>Contenido Transparente</ul>
+                        <ul><li>Contenido Transparente</li></ul>
                         <p>Categorías a las que pertenece:</p>
                         <ul>
                             <li>Contenido Fluido</li>
@@ -1889,7 +1889,7 @@ width="250" height="200"&gt;&lt;/object&gt;
                         <p class="Resultado">Resultado:</p>
                         <div class="Implementacion">
                             <object type="video/mp4" data="./media/flower.mp4" 
-                            width="250" height="200"></object>
+                            width="250" height="200" alt="Flowes">Flowers</object>
                         </div>
                     </td>
                     <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/object" target="_blank">Información Adicional</a></td>
@@ -2014,8 +2014,10 @@ width="250" height="200"&gt;&lt;/object&gt;
                         <p class="Resultado">Resultado:</p>
                         <div class="Implementacion">
                             <form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
-                                <input type="range" id="b" name="b" value="50" /> +
-                                <input type="number" id="a" name="a" value="10" /> =
+                                <label for="bNumber">Rango:</label>
+                                <input type="range" id="bNumber" value="50" /> +
+                                <label for="aNumber">Numero:</label>
+                                <input type="number" id="aNumber"value="10" /> =
                                 <output name="result" for="a b">60</output>
                             </form>
                         </div>
@@ -2789,15 +2791,11 @@ width="250" height="200"&gt;&lt;/object&gt;
                         </ul>
                     </td>
                     <td class="Ejemplo"><pre><code>
-&lt;textarea name="textarea" rows="5" cols="30" minlength="10" maxlength="20"&gt;
-    Esto es un textarea
-&lt;/textarea&gt;
+&lt;textarea name="textarea" rows="10" cols="50"&gt;Write something here&lt;/textarea&gt;
                         </code></pre>
                         <p class="Resultado">Resultado:</p>
                         <div class="Implementacion">
-                            <textarea name="textarea" rows="5" cols="30" minlength="10" maxlength="20">
-                                Esto es un textarea
-                            </textarea>
+                            <textarea name="textarea" rows="10" cols="50">Write something here</textarea>
                         </div>
                     </td>
                     <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea" target="_blank">Información Adicional</a></td>
