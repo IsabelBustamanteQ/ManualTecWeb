@@ -46,7 +46,6 @@ nav ul li a {
 }
 code{
     font-size: 14px;
-    width: max-content 35%;
 }
 table{
     width:fit-content;
@@ -68,4 +67,10 @@ table{
 }
 table{
     width: 100%;
+}
+.TEjemplo{
+    width: auto;
+}
+blockquote{
+    width: 400px;
 }
