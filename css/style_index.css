@@ -1,0 +1,71 @@
+h1{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+td{
+    background-color:#FDE5EC;
+    border: #E48586 solid;
+}
+th{
+    background-color:#E48586;
+    border: #E48586 solid;
+}
+
+.Resultado{
+    font-weight: bold;
+}
+#EjemploStyle{
+    color: white;
+    background-color: blueviolet;
+}
+#example-paragraphs{
+    border: 1px solid;
+    width:9rem;
+}
+#main-menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FCBAAD;
+}
+nav ul {
+   list-style: none;
+    overflow: hidden; 
+}
+nav ul li {
+    float: left;
+}
+nav ul li a {
+    display: block;
+    padding: 10px;
+    font-size: 20px;
+    color:#48206d;
+    text-decoration: none;
+    font-style: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+code{
+    font-size: 14px;
+    width: max-content 35%;
+}
+table{
+    width:fit-content;
+    height: auto;
+}
+.Enlace{
+    text-align: center;
+    width:15%;
+}
+.Descripcion{
+    width: min-content 35%;
+}
+.Ejemplo{
+    width:max-content 35%;
+}
+.Elemento{
+    background-color: #f0a6a8;
+    width: 15%;
+}
+table{
+    width: 100%;
+}

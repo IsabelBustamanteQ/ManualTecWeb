@@ -4,40 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manual HTML</title>
-    <style>
-        td{
-            background-color:lightcyan;
-            border-style:solid;
-            border-color: cadetblue;
-        }
-        th{
-            background-color: aquamarine;
-        }
-        .Resultado{
-            font-weight: bold;
-        }
-        #EjemploStyle {
-            color: white;
-            background-color: blueviolet;
-        }
-    </style>
+    <link rel="stylesheet" href="./css/style_index.css">
 </head>
 <body>
     <header>
         <h1>Comandos HTML</h1>
-        <ul>
-            <li><a href="index.html">Html</a></li>
-            <li><a href="./html/css.html" target="_self">css</a></li>
-        </ul>
+        <nav id="main-menu">
+            <ul>
+                <li><a href="index.html">Html</a></li>
+                <li><a href="./html/css.html" target="_self">css</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
         <table>
             <thead>
                 <tr>
                     <th scope="col">Elemento</th>
-                    <th scope="col">Descripcion</th>
+                    <th scope="col">Descripción</th>
                     <th scope="col">Ejemplo</th>
-                    <th scope="col">Informacion adicional</th>
+                    <th scope="col">Información Adicional</th>
                 </tr>
             </thead>
             <tbody>
@@ -66,7 +52,7 @@
                             <a href="https://www.mozilla.com">Mozilla</a>
                         </div>                        
                     </td>
-                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a" target="_blank">Informacion adicional</a></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a" target="_blank">Información Adicional</a></td>
                 </tr>
                 <tr id="abbr">
                     <th class="Elemento" scope="row">&lt;abbr&gt;</th>
@@ -93,7 +79,7 @@
                             <p> <abbr title="Laugh Out Loud">LOL</abbr> big time.</p>
                         </div>                      
                     </td>
-                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/abbr" target="_blank">Informacion adicional</a></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/abbr" target="_blank">Información Adicional</a></td>
                 </tr>
                 <tr id="address">
                     <th class="Elemento" scope="row">&lt;address&gt;</th>
@@ -122,7 +108,7 @@
                             </address>
                         </div>
                     </td>
-                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/address" target="_blank">Informacion adicional</a></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/address" target="_blank">Información Adicional</a></td>
                 </tr>
                 <tr id="area">
                     <th class="Elemento" scope="row">&lt;area&gt;</th>
@@ -178,7 +164,7 @@ alt="350 x 150 pic" /&gt;
                                 alt="350 x 150 pic" />    
                         </div>
                     </td>
-                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/area" target="_blank">Informacion adicional</a></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/area" target="_blank">Información Adicional</a></td>
                 </tr>
                 <tr id="article">
                     <th class="Elemento" scope="row">&lt;article&gt;</th>
@@ -210,7 +196,7 @@ alt="350 x 150 pic" /&gt;
                             </article>
                         </div>
                     </td>
-                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/article" target="_blank">Informacion adicional</a></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/article" target="_blank">Información Adicional</a></td>
                 </tr>
                 <tr id="aside">
                     <th class="Elemento" scope="row">&lt;aside&gt;</th>
@@ -251,7 +237,7 @@ alt="350 x 150 pic" /&gt;
                             </article>
                         </div>
                     </td>
-                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/aside" target="_blank">Informacion adicional</a></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/aside" target="_blank">Información Adicional</a></td>
                 </tr>
                 <tr id="audio">
                     <th class="Elemento" scope="row">&lt;audio&gt;</th>
@@ -280,7 +266,7 @@ alt="350 x 150 pic" /&gt;
                             <audio controls src="./media/SaveYourTears.mp3"></audio>
                         </div>
                     </td>
-                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio" target="_blank">Informacion adicional</a></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio" target="_blank">Información Adicional</a></td>
                 </tr>
                 <tr id="b">
                     <th class="Elemento" scope="row">&lt;b&gt;</th>
@@ -313,7 +299,7 @@ alt="350 x 150 pic" /&gt;
                             </p>
                         </div>
                     </td>
-                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/b" target="_blank">Informacion adicional</a></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/b" target="_blank">Información Adicional</a></td>
                 </tr>
                 <tr id="base">
                     <th class="Elemento" scope="row">&lt;base&gt;</th>
@@ -330,7 +316,7 @@ alt="350 x 150 pic" /&gt;
 &lt;base target="_top" href="https://example.com/" /&gt;
                         </code></pre>
                     </td>
-                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base" target="_blank">Informacion adicional</a></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base" target="_blank">Información Adicional</a></td>
                 </tr>
                 <tr id="bdi">
                     <th class="Elemento" scope="row">&lt;bdi&gt;</th>
@@ -355,7 +341,7 @@ alt="350 x 150 pic" /&gt;
                             <bdi class="name">Evil Steven</bdi>: 1st place
                         </div>
                     </td>
-                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/bdi" target="_blank">Informacion adicional</a></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/bdi" target="_blank">Información Adicional</a></td>
                 </tr>
                 <tr id="bdo">
                     <th class="Elemento" scope="row">&lt;bdo&gt;</th>
@@ -381,7 +367,7 @@ alt="350 x 150 pic" /&gt;
                             <p><bdo dir="rtl">This text will go right to left.</bdo></p>
                         </div>
                     </td>
-                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/bdo" target="_blank">Informacion adicional</a></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/bdo" target="_blank">Información Adicional</a></td>
                 </tr>
                 <tr id="blockquote">
                     <th class="Elemento" scope="row">&lt;blockquote&gt;</th>
@@ -426,7 +412,7 @@ alt="350 x 150 pic" /&gt;
                               
                         </div>
                     </td>
-                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote" target="_blank">Informacion adicional</a></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote" target="_blank">Información Adicional</a></td>
                 </tr>
                 <tr id="body">
                     <th class="Elemento" scope="row">&lt;body&gt;</th>
@@ -449,7 +435,7 @@ alt="350 x 150 pic" /&gt;
 &lt;/html&gt;      
                         </code></pre>
                     </td>
-                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/body" target="_blank">Informacion adicional</a></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/body" target="_blank">Información Adicional</a></td>
                 </tr>
                 <tr id="br">
                     <th class="Elemento" scope="row">&lt;br&gt;</th>
@@ -479,7 +465,7 @@ Mountain View, CA&lt;br/&gt; 94041&lt;br/&gt; USA&lt;br/&gt;
                             USA<br />                            
                         </div>
                     </td>
-                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/br" target="_blank">Informacion adicional</a></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/br" target="_blank">Información Adicional</a></td>
                 </tr>
                 <tr id="button">
                     <th class="Elemento" scope="row">&lt;button&gt;</th>
@@ -503,7 +489,7 @@ Mountain View, CA&lt;br/&gt; 94041&lt;br/&gt; USA&lt;br/&gt;
                             <button class="favorite styled" type="button">Add to favorites</button>
                         </div>
                     </td>
-                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button" target="_blank">Informacion adicional</a></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button" target="_blank">Información Adicional</a></td>
                 </tr>
                 <tr id="canvas">
                     <th class="Elemento" scope="row">&lt;canvas&gt;</th>
@@ -526,7 +512,7 @@ Mountain View, CA&lt;br/&gt; 94041&lt;br/&gt; USA&lt;br/&gt;
 &lt;/canvas&gt;
                         </code></pre>
                     </td>
-                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/canvas" target="_blank">Informacion adicional</a></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/canvas" target="_blank">Información Adicional</a></td>
                 </tr>
                 <tr id="caption">
                     <th class="Elemento" scope="row">&lt;caption&gt;</th>
@@ -570,7 +556,7 @@ Mountain View, CA&lt;br/&gt; 94041&lt;br/&gt; USA&lt;br/&gt;
                             </table>
                         </div>
                     </td>
-                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/caption" target="_blank">Informacion adicional</a></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/caption" target="_blank">Información Adicional</a></td>
                 </tr>
                 <tr id="cite">
                     <th class="Elemento" scope="row">&lt;cite&gt;</th>
@@ -594,7 +580,7 @@ Mountain View, CA&lt;br/&gt; 94041&lt;br/&gt; USA&lt;br/&gt;
                             <p>More information can be found in <cite>[ISO-0000]</cite>.</p>
                         </div>
                     </td>
-                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/cite" target="_blank">Informacion adicional</a></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/cite" target="_blank">Información Adicional</a></td>
                 </tr>
                 <tr id="code">
                     <th class="Elemento" scope="row">&lt;code&gt;</th>
@@ -625,7 +611,7 @@ Mountain View, CA&lt;br/&gt; 94041&lt;br/&gt; USA&lt;br/&gt;
                               
                         </div>
                     </td>
-                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/code" target="_blank">Informacion adicional</a></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/code" target="_blank">Información Adicional</a></td>
                 </tr>
                 <tr id="col">
                     <th class="Elemento" scope="row">&lt;col&gt;</th>
@@ -670,7 +656,7 @@ Mountain View, CA&lt;br/&gt; 94041&lt;br/&gt; USA&lt;br/&gt;
                             </table>
                         </div>
                     </td>
-                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/col" target="_blank">Informacion adicional</a></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/col" target="_blank">Información Adicional</a></td>
                 </tr>
                 <tr id="colgroup">
                     <th class="Elemento" scope="row">&lt;colgroup&gt;</th>
@@ -713,7 +699,7 @@ Mountain View, CA&lt;br/&gt; 94041&lt;br/&gt; USA&lt;br/&gt;
                             </table>
                         </div>                    
                     </td>
-                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/colgroup" target="_blank">Informacion adicional</a></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/colgroup" target="_blank">Información Adicional</a></td>
                 </tr>
                 <tr id="data">
                     <th class="Elemento" scope="row">&lt;data&gt;</th>
@@ -742,7 +728,7 @@ Mountain View, CA&lt;br/&gt; 94041&lt;br/&gt; USA&lt;br/&gt;
                             </ul>
                         </div>
                     </td>
-                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/data" target="_blank">Informacion adicional</a></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/data" target="_blank">Información Adicional</a></td>
                 </tr>
                 <tr id="datalist">
                     <th class="Elemento" scope="row">&lt;datalist&gt;</th>
@@ -785,7 +771,7 @@ Mountain View, CA&lt;br/&gt; 94041&lt;br/&gt; USA&lt;br/&gt;
                             </datalist>                            
                         </div>
                     </td>
-                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/datalist" target="_blank">Informacion adicional</a></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/datalist" target="_blank">Información Adicional</a></td>
                 </tr>
                 <tr id="dd">
                     <th class="Elemento" scope="row">&lt;dd&gt;</th>
@@ -810,7 +796,7 @@ Mountain View, CA&lt;br/&gt; 94041&lt;br/&gt; USA&lt;br/&gt;
                             </dl>                                    
                         </div>
                     </td>
-                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dd" target="_blank">Informacion adicional</a></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dd" target="_blank">Información Adicional</a></td>
                 </tr>
                 <tr id="del">
                     <th class="Elemento" scope="row">&lt;del&gt;</th>
@@ -832,7 +818,7 @@ Mountain View, CA&lt;br/&gt; 94041&lt;br/&gt; USA&lt;br/&gt;
                             <p> Aquí tenemos un ejemplo de <del>Texto Eliminado</del></p>
                         </div>
                     </td>
-                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/del" target="_blank">Informacion adicional</a></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/del" target="_blank">Información Adicional</a></td>
                 </tr>
                 <tr id="details">
                     <th class="Elemento" scope="row">&lt;details&gt;</th>
@@ -864,7 +850,7 @@ Mountain View, CA&lt;br/&gt; 94041&lt;br/&gt; USA&lt;br/&gt;
                             </details>
                         </div>
                     </td>
-                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details" target="_blank">Informacion adicional</a></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details" target="_blank">Información Adicional</a></td>
                 </tr>
                 <tr id="dfn">
                     <th class="Elemento" scope="row">&lt;dfn&gt;</th>
@@ -887,7 +873,7 @@ Mountain View, CA&lt;br/&gt; 94041&lt;br/&gt; USA&lt;br/&gt;
                             <p>A <dfn id="def-validator">validator</dfn> is a program that checks for syntax errors in code or documents.</p>
                         </div>
                     </td>
-                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dfn" target="_blank">Informacion adicional</a></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dfn" target="_blank">Información Adicional</a></td>
                 </tr>
                 <tr id="dialog">
                     <th class="Elemento" scope="row">&lt;dialog&gt;</th>
@@ -915,7 +901,7 @@ Mountain View, CA&lt;br/&gt; 94041&lt;br/&gt; USA&lt;br/&gt;
                             </dialog>
                         </div>
                     </td>
-                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog" target="_blank">Informacion adicional</a></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog" target="_blank">Información Adicional</a></td>
                 </tr>
                 <tr id="div">
                     <th class="Elemento" scope="row">&lt;div&gt;</th>
@@ -947,7 +933,7 @@ Mountain View, CA&lt;br/&gt; 94041&lt;br/&gt; USA&lt;br/&gt;
                             </div>                   
                         </div>
                     </td>
-                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div" target="_blank">Informacion adicional</a></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div" target="_blank">Información Adicional</a></td>
                 </tr>
                 <tr id="dl">
                     <th class="Elemento" scope="row">&lt;dl&gt;</th>
@@ -984,7 +970,7 @@ Mountain View, CA&lt;br/&gt; 94041&lt;br/&gt; USA&lt;br/&gt;
                             </dl>
                         </div>
                     </td>
-                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dl" target="_blank">Informacion adicional</a></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dl" target="_blank">Información Adicional</a></td>
                 </tr>
                 <tr id="dt">
                     <th class="Elemento" scope="row">&lt;dt&gt;</th>
@@ -1009,7 +995,7 @@ Mountain View, CA&lt;br/&gt; 94041&lt;br/&gt; USA&lt;br/&gt;
                             </dl>                                    
                         </div>
                     </td>
-                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dt" target="_blank">Informacion adicional</a></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dt" target="_blank">Información Adicional</a></td>
                 </tr>
                 <tr id="em">
                     <th class="Elemento" scope="row">&lt;em&gt;</th>
@@ -1032,7 +1018,7 @@ Mountain View, CA&lt;br/&gt; 94041&lt;br/&gt; USA&lt;br/&gt;
                             <p>Get out of bed <em>now</em>!</p>
                         </div>
                     </td>
-                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/em" target="_blank">Informacion adicional</a></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/em" target="_blank">Información Adicional</a></td>
                 </tr>
                 <tr id="embed">
                     <th class="Elemento" scope="row">&lt;embed&gt;</th>
@@ -1057,7 +1043,7 @@ Mountain View, CA&lt;br/&gt; 94041&lt;br/&gt; USA&lt;br/&gt;
                             <embed type="video/webm" src="./media/flower.mp4" width="250" height="200" />
                         </div>
                     </td>
-                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/embed" target="_blank">Informacion adicional</a></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/embed" target="_blank">Información Adicional</a></td>
                 </tr>
                 <tr id="fieldset">
                     <th class="Elemento" scope="row">&lt;fieldset&gt;</th>
@@ -1095,7 +1081,7 @@ Mountain View, CA&lt;br/&gt; 94041&lt;br/&gt; USA&lt;br/&gt;
                             </form>
                         </div>
                     </td>
-                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset" target="_blank">Informacion adicional</a></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset" target="_blank">Información Adicional</a></td>
                 </tr>
                 <tr id="figcaption">
                     <th class="Elemento" scope="row">&lt;figcaption&gt;</th>
@@ -1120,7 +1106,7 @@ Mountain View, CA&lt;br/&gt; 94041&lt;br/&gt; USA&lt;br/&gt;
                             </figure>
                         </div>
                     </td>
-                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figcaption" target="_blank">Informacion adicional</a></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figcaption" target="_blank">Información Adicional</a></td>
                 </tr>
                 <tr id="figure">
                     <th class="Elemento" scope="row">&lt;figure&gt;</th>
@@ -1150,7 +1136,7 @@ Mountain View, CA&lt;br/&gt; 94041&lt;br/&gt; USA&lt;br/&gt;
                             </figure>
                         </div>
                     </td>
-                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure" target="_blank">Informacion adicional</a></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure" target="_blank">Información Adicional</a></td>
                 </tr>
                 <tr id="footer">
                     <th class="Elemento" scope="row">&lt;footer&gt;</th>
@@ -1182,7 +1168,7 @@ Mountain View, CA&lt;br/&gt; 94041&lt;br/&gt; USA&lt;br/&gt;
                             </article>
                         </div>
                     </td>
-                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/footer" target="_blank">Informacion adicional</a></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/footer" target="_blank">Información Adicional</a></td>
                 </tr>
                 <tr id="form">
                     <th class="Elemento" scope="row">&lt;form&gt;</th>
@@ -1212,7 +1198,7 @@ Mountain View, CA&lt;br/&gt; 94041&lt;br/&gt; USA&lt;br/&gt;
                             </form>
                         </div>
                     </td>
-                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form" target="_blank">Informacion adicional</a></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form" target="_blank">Información Adicional</a></td>
                 </tr>
                 <tr id="h1-h6">
                     <th class="Elemento" scope="row">&lt;h1&gt; - &lt;h6&gt;</th>
@@ -1245,7 +1231,7 @@ Mountain View, CA&lt;br/&gt; 94041&lt;br/&gt; USA&lt;br/&gt;
                             <h6>Título H6</h6>
                         </div>
                     </td>
-                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/h1" target="_blank">Informacion adicional</a></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/h1" target="_blank">Información Adicional</a></td>
                 </tr>
                 <tr id="head">
                     <th class="Elemento" scope="row">&lt;head&gt;</th>
@@ -1266,7 +1252,7 @@ Mountain View, CA&lt;br/&gt; 94041&lt;br/&gt; USA&lt;br/&gt;
     &lt;/head&gt;
 &lt;/html&gt;
                     </code></pre></td>
-                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/head" target="_blank">Informacion adicional</a></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/head" target="_blank">Información Adicional</a></td>
                 </tr>
                 <tr id="header">
                     <th class="Elemento" scope="row">&lt;header&gt;</th>
@@ -1300,7 +1286,7 @@ Mountain View, CA&lt;br/&gt; 94041&lt;br/&gt; USA&lt;br/&gt;
                             </article>
                         </div>
                     </td>
-                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/header" target="_blank">Informacion adicional</a></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/header" target="_blank">Información Adicional</a></td>
                 </tr>
                 <tr id="hgroup">
                     <th class="Elemento" scope="row">&lt;hgroup&gt;</th>
@@ -1334,7 +1320,7 @@ Mountain View, CA&lt;br/&gt; 94041&lt;br/&gt; USA&lt;br/&gt;
                             <p>Victor Frankenstein, a Swiss scientist, has a great ambition: to create intelligent life.</p>
                         </div>
                     </td>
-                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hgroup" target="_blank">Informacion adicional</a></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hgroup" target="_blank">Información Adicional</a></td>
                 </tr>
                 <tr id="hr">
                     <th class="Elemento" scope="row">&lt;hr&gt;</th>
@@ -1358,7 +1344,7 @@ Mountain View, CA&lt;br/&gt; 94041&lt;br/&gt; USA&lt;br/&gt;
                               
                         </div>
                     </td>
-                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hr" target="_blank">Informacion adicional</a></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hr" target="_blank">Información Adicional</a></td>
                 </tr>
                 <tr id="html">
                     <th class="Elemento" scope="row">&lt;html&gt;</th>
@@ -1383,7 +1369,7 @@ Mountain View, CA&lt;br/&gt; 94041&lt;br/&gt; USA&lt;br/&gt;
     &lt;/body&gt;
 &lt;/html&gt;
                     </code></pre></td>
-                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/html" target="_blank">Informacion adicional</a></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/html" target="_blank">Información Adicional</a></td>
                 </tr>
                 <tr id="i">
                     <th class="Elemento" scope="row">&lt;i&gt;</th>
@@ -1406,7 +1392,7 @@ Mountain View, CA&lt;br/&gt; 94041&lt;br/&gt; USA&lt;br/&gt;
                             <p>I looked at it and thought <i>This can't be real!</i></p>
                         </div>
                     </td>
-                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/i" target="_blank">Informacion adicional</a></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/i" target="_blank">Información Adicional</a></td>
                 </tr>
                 <tr id="iframe">
                     <th class="Elemento" scope="row">&lt;iframe&gt;</th>
@@ -1448,7 +1434,7 @@ src="https://www.openstreetmap.org/export/embed.html?bbox=-0.004017949104309083%
                             </iframe>
                         </div>
                     </td>
-                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe" target="_blank">Informacion adicional</a></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe" target="_blank">Información Adicional</a></td>
                 </tr>
                 <tr id="img">
                     <th class="Elemento" scope="row">&lt;img&gt;</th>
@@ -1478,7 +1464,7 @@ src="https://www.openstreetmap.org/export/embed.html?bbox=-0.004017949104309083%
                             />
                         </div>
                     </td>
-                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img" target="_blank">Informacion adicional</a></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img" target="_blank">Información Adicional</a></td>
                 </tr>
                 <tr id="input">
                     <th class="Elemento" scope="row">&lt;input&gt;</th>
@@ -1502,7 +1488,7 @@ src="https://www.openstreetmap.org/export/embed.html?bbox=-0.004017949104309083%
                             <input id="textInput" class="custom" size="32" />
                         </div>
                     </td>
-                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input" target="_blank">Informacion adicional</a></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input" target="_blank">Información Adicional</a></td>
                 </tr>
                 <tr id="ins">
                     <th class="Elemento" scope="row">&lt;ins&gt;</th>
@@ -1524,7 +1510,7 @@ src="https://www.openstreetmap.org/export/embed.html?bbox=-0.004017949104309083%
                             <ins><p>Este es un Texto agregado</p></ins>
                         </div>
                     </td>
-                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ins" target="_blank">Informacion adicional</a></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ins" target="_blank">Información Adicional</a></td>
                 </tr>
                 <tr id="kbd">
                     <th class="Elemento" scope="row">&lt;kbd&gt;</th>
@@ -1553,7 +1539,7 @@ src="https://www.openstreetmap.org/export/embed.html?bbox=-0.004017949104309083%
                         </p>
                     </div>
                 </td>
-                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/kbd" target="_blank">Informacion adicional</a></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/kbd" target="_blank">Información Adicional</a></td>
                 </tr>
                 <tr id="label">
                     <th class="Elemento" scope="row">&lt;label&gt;</th>
@@ -1584,7 +1570,7 @@ src="https://www.openstreetmap.org/export/embed.html?bbox=-0.004017949104309083%
                             </label>
                         </div>
                     </td>
-                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label" target="_blank">Informacion adicional</a></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label" target="_blank">Información Adicional</a></td>
                 </tr>
                 <tr id="legend">
                     <th class="Elemento" scope="row">&lt;legend&gt;</th>
@@ -1614,7 +1600,7 @@ src="https://www.openstreetmap.org/export/embed.html?bbox=-0.004017949104309083%
                             </fieldset>
                         </div>
                     </td>
-                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/legend" target="_blank">Informacion adicional</a></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/legend" target="_blank">Información Adicional</a></td>
                 </tr>
                 <tr id="li">
                     <th class="Elemento" scope="row">&lt;li&gt;</th>
@@ -1641,7 +1627,7 @@ src="https://www.openstreetmap.org/export/embed.html?bbox=-0.004017949104309083%
                             </ol>                              
                         </div>
                     </td>
-                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li" target="_blank">Informacion adicional</a></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li" target="_blank">Información Adicional</a></td>
                 </tr>
                 <tr id="link">
                     <th class="Elemento" scope="row">&lt;link&gt;</th>
@@ -1659,7 +1645,7 @@ src="https://www.openstreetmap.org/export/embed.html?bbox=-0.004017949104309083%
                     <td class="Ejemplo"><pre><code>
 &lt;link href="main.css" rel="stylesheet" /&gt;
                     </code></pre></td>
-                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link" target="_blank">Informacion adicional</a></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link" target="_blank">Información Adicional</a></td>
                 </tr>
                 <tr id="main">
                     <th class="Elemento" scope="row">&lt;main&gt;</th>
@@ -1678,7 +1664,7 @@ src="https://www.openstreetmap.org/export/embed.html?bbox=-0.004017949104309083%
     &lt; Contenido de main&gt;
 &lt;/main&gt;
                     </code></pre></td>
-                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/main" target="_blank">Informacion adicional</a></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/main" target="_blank">Información Adicional</a></td>
                 </tr>
                 <tr id="map">
                     <th class="Elemento" scope="row">&lt;map&gt;</th>
@@ -1731,7 +1717,7 @@ alt="350 x 150 pic" /&gt;
                                 alt="350 x 150 pic" />    
                         </div>
                     </td>
-                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/map" target="_blank">Informacion adicional</a></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/map" target="_blank">Información Adicional</a></td>
                 </tr>
                 <tr id="mark">
                     <th class="Elemento" scope="row">&lt;mark&gt;</th>
@@ -1754,7 +1740,7 @@ alt="350 x 150 pic" /&gt;
                             <p>Este es un texto <mark>Marcado o resaltado</mark>.</p>
                         </div>
                     </td>
-                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/mark" target="_blank">Informacion adicional</a></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/mark" target="_blank">Información Adicional</a></td>
                 </tr>
                 <tr id="menu">
                     <th class="Elemento" scope="row">&lt;menu&gt;</th>
@@ -1783,7 +1769,7 @@ alt="350 x 150 pic" /&gt;
                             </menu>
                         </div>
                     </td>
-                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/menu" target="_blank">Informacion adicional</a></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/menu" target="_blank">Información Adicional</a></td>
                 </tr>
                 <tr id="meta">
                     <th class="Elemento" scope="row">&lt;meta&gt;</th>
@@ -1801,7 +1787,7 @@ alt="350 x 150 pic" /&gt;
                     <td class="Ejemplo"><pre><code>
 &lt;meta charset="utf-8" /&gt;
                     </code></pre></td>
-                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta" target="_blank">Informacion adicional</a></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta" target="_blank">Información Adicional</a></td>
                 </tr>
                 <tr id="meter">
                     <th class="Elemento" scope="row">&lt;meter&gt;</th>
@@ -1826,7 +1812,7 @@ high="66" optimum="80" value="75"&gt;at 75/100&lt;/meter&gt;
                             <meter id="fuel" min="0" max="100" low="33" high="66" optimum="80" value="75">at 75/100</meter>
                         </div>
                     </td>
-                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meter" target="_blank">Informacion adicional</a></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meter" target="_blank">Información Adicional</a></td>
                 </tr>
                 <tr id="nav">
                     <th class="Elemento" scope="row">&lt;nav&gt;</th>
@@ -1850,7 +1836,7 @@ high="66" optimum="80" value="75"&gt;at 75/100&lt;/meter&gt;
 &lt;/nav&gt;
                         </code></pre>
                     </td>
-                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav" target="_blank">Informacion adicional</a></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav" target="_blank">Información Adicional</a></td>
                 </tr>
                 <tr id="noscript">
                     <th class="Elemento" scope="row">&lt;noscript&gt;</th>
@@ -1873,7 +1859,7 @@ high="66" optimum="80" value="75"&gt;at 75/100&lt;/meter&gt;
     &lt;a href="https://www.mozilla.org/"&gt;External Link&lt;/a&gt;
 &lt;/noscript&gt;
                     </code></pre></td>
-                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/noscript" target="_blank">Informacion adicional</a></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/noscript" target="_blank">Información Adicional</a></td>
                 </tr>
                 <tr id="object">
                     <th class="Elemento" scope="row">&lt;object&gt;</th>
@@ -1901,7 +1887,7 @@ width="250" height="200"&gt;&lt;/object&gt;
                             width="250" height="200"></object>
                         </div>
                     </td>
-                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/object" target="_blank">Informacion adicional</a></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/object" target="_blank">Información Adicional</a></td>
                 </tr>
                 <tr id="ol">
                     <th class="Elemento" scope="row">&lt;ol&gt;</th>
@@ -1935,7 +1921,7 @@ width="250" height="200"&gt;&lt;/object&gt;
                             </ol> 
                         </div>
                     </td>
-                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ol" target="_blank">Informacion adicional</a></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ol" target="_blank">Información Adicional</a></td>
                 </tr>
                 <tr id="optgroup">
                     <th class="Elemento" scope="row">&lt;optgroup&gt;</th>
@@ -1970,7 +1956,7 @@ width="250" height="200"&gt;&lt;/object&gt;
                             </select>        
                         </div>
                     </td>
-                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/optgroup" target="_blank">Informacion adicional</a></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/optgroup" target="_blank">Información Adicional</a></td>
                 </tr>
                 <tr id="option">
                     <th class="Elemento" scope="row">&lt;option&gt;</th>
@@ -1997,7 +1983,7 @@ width="250" height="200"&gt;&lt;/object&gt;
                             </select>
                         </div>
                     </td>
-                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/option" target="_blank">Informacion adicional</a></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/option" target="_blank">Información Adicional</a></td>
                 </tr>
                 <tr id="output">
                     <th class="Elemento" scope="row">&lt;output&gt;</th>
@@ -2029,7 +2015,7 @@ width="250" height="200"&gt;&lt;/object&gt;
                             </form>
                         </div>
                     </td>
-                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/output" target="_blank">Informacion adicional</a></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/output" target="_blank">Información Adicional</a></td>
                 </tr>
                 <tr id="p">
                     <th class="Elemento" scope="row">&lt;p&gt;</th>
@@ -2051,7 +2037,7 @@ width="250" height="200"&gt;&lt;/object&gt;
                             <p>Este es un párrafo</p>
                         </div>
                     </td>
-                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p" target="_blank">Informacion adicional</a></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p" target="_blank">Información Adicional</a></td>
                 </tr>
                 <tr id="picture">
                     <th class="Elemento" scope="row">&lt;picture&gt;</th>
@@ -2081,7 +2067,7 @@ width="250" height="200"&gt;&lt;/object&gt;
                             </picture>
                         </div>
                     </td>
-                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/picture" target="_blank">Informacion adicional</a></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/picture" target="_blank">Información Adicional</a></td>
                 </tr>
                 <tr id="pre">
                     <th class="Elemento" scope="row">&lt;pre&gt;</th>
@@ -2113,7 +2099,7 @@ width="250" height="200"&gt;&lt;/object&gt;
                             </pre>
                         </div>
                     </td>
-                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/pre" target="_blank">Informacion adicional</a></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/pre" target="_blank">Información Adicional</a></td>
                 </tr>
                 <tr id="progress">
                     <th class="Elemento" scope="row">&lt;progress&gt;</th>
@@ -2137,7 +2123,7 @@ width="250" height="200"&gt;&lt;/object&gt;
                             <progress max="100" value="70">70%</progress>
                         </div>
                     </td>
-                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/progress" target="_blank">Informacion adicional</a></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/progress" target="_blank">Información Adicional</a></td>
                 </tr>
                 <tr id="q">
                     <th class="Elemento" scope="row">&lt;q&gt;</th>
@@ -2167,7 +2153,7 @@ width="250" height="200"&gt;&lt;/object&gt;
                             </p>
                         </div>
                     </td>
-                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/q" target="_blank">Informacion adicional</a></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/q" target="_blank">Información Adicional</a></td>
                 </tr>
                 <tr id="rp">
                     <th class="Elemento" scope="row">&lt;rp&gt;</th>
@@ -2186,7 +2172,7 @@ width="250" height="200"&gt;&lt;/object&gt;
                             <ruby> 漢 <rp>(</rp><rt>kan</rt><rp>)</rp> 字 <rp>(</rp><rt>ji</rt><rp>)</rp> </ruby>
                         </div>
                     </td>
-                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/rp" target="_blank">Informacion adicional</a></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/rp" target="_blank">Información Adicional</a></td>
                 </tr>
                 <tr id="rt">
                     <th class="Elemento" scope="row">&lt;rt&gt;</th>
@@ -2205,7 +2191,7 @@ width="250" height="200"&gt;&lt;/object&gt;
                             <ruby> 漢 <rt>Kan</rt> 字 <rt>ji</rt> </ruby>
                         </div>
                     </td>
-                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/rt" target="_blank">Informacion adicional</a></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/rt" target="_blank">Información Adicional</a></td>
                 </tr>
                 <tr id="ruby">
                     <th class="Elemento" scope="row">&lt;ruby&gt;</th>
@@ -2228,7 +2214,7 @@ width="250" height="200"&gt;&lt;/object&gt;
                             <ruby> 明日 <rp>(</rp><rt>Ashita</rt><rp>)</rp> </ruby>
                         </div>
                     </td>
-                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ruby" target="_blank">Informacion adicional</a></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ruby" target="_blank">Información Adicional</a></td>
                 </tr>
                 <tr id="s">
                     <th class="Elemento" scope="row">&lt;s&gt;</th>
@@ -2250,7 +2236,7 @@ width="250" height="200"&gt;&lt;/object&gt;
                             <s>Este es un texto tachado</s>
                         </div>
                     </td>
-                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/s" target="_blank">Informacion adicional</a></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/s" target="_blank">Información Adicional</a></td>
                 </tr>
                 <tr id="samp">
                     <th class="Elemento" scope="row">&lt;samp&gt;</th>
@@ -2277,7 +2263,7 @@ width="250" height="200"&gt;&lt;/object&gt;
                             </p>
                         </div>
                     </td>
-                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/samp" target="_blank">Informacion adicional</a></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/samp" target="_blank">Información Adicional</a></td>
                 </tr>
                 <tr id="script">
                     <th class="Elemento" scope="row">&lt;script&gt;</th>
@@ -2297,7 +2283,7 @@ width="250" height="200"&gt;&lt;/object&gt;
     alert("Hello World!");
 &lt;/script&gt;
                         </code></pre></td>
-                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script" target="_blank">Informacion adicional</a></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script" target="_blank">Información Adicional</a></td>
                 </tr>
                 <tr id="search">
                     <th class="Elemento" scope="row">&lt;search&gt;</th>
@@ -2322,7 +2308,7 @@ width="250" height="200"&gt;&lt;/object&gt;
     &lt;/search&gt;
 &lt;/header&gt;
                     </code></pre></td>
-                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/search" target="_blank">Informacion adicional</a></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/search" target="_blank">Información Adicional</a></td>
                 </tr>
                 <tr id="section">
                     <th class="Elemento" scope="row">&lt;section&gt;</th>
@@ -2351,7 +2337,7 @@ width="250" height="200"&gt;&lt;/object&gt;
                             </section>                              
                         </div>
                     </td>
-                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/section" target="_blank">Informacion adicional</a></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/section" target="_blank">Información Adicional</a></td>
                 </tr>
                 <tr id="select">
                     <th class="Elemento" scope="row">&lt;select&gt;</th>
@@ -2387,7 +2373,7 @@ width="250" height="200"&gt;&lt;/object&gt;
                             </select>
                         </div>
                     </td>
-                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select" target="_blank">Informacion adicional</a></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select" target="_blank">Información Adicional</a></td>
                 </tr>
                 <tr id="slot">
                     <th class="Elemento" scope="row">&lt;slot&gt;</th>
@@ -2413,7 +2399,7 @@ width="250" height="200"&gt;&lt;/object&gt;
                             </summary>                    
                         </div>
                     </td>
-                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/slot" target="_blank">Informacion adicional</a></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/slot" target="_blank">Información Adicional</a></td>
                 </tr>
                 <tr id="small">
                     <th class="Elemento" scope="row">&lt;small&gt;</th>
@@ -2435,7 +2421,7 @@ width="250" height="200"&gt;&lt;/object&gt;
                             <p>Texto normal. <small>Texto con small.</small></p>
                         </div>
                     </td>
-                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/small" target="_blank">Informacion adicional</a></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/small" target="_blank">Información Adicional</a></td>
                 </tr>
                 <tr id="source">
                     <th class="Elemento" scope="row">&lt;source&gt;</th>
@@ -2448,21 +2434,21 @@ width="250" height="200"&gt;&lt;/object&gt;
                     </td>
                     <td class="Ejemplo"><pre><code>
 &lt;picture&gt;
-    &lt;source srcset="./media/imagen.jpg" media="(min-width: 800px)" /&gt;
-    &lt;source srcset="./media/imagen2.jpg" media="(min-width: 600px)" /&gt;
+    &lt;source srcset="./media/imagen.jpg" media="width: 150px" /&gt;
+    &lt;source srcset="./media/imagen2.jpg" media="width: 100px" /&gt;
     &lt;img src="./media/imagen2.jpg" alt="Beso" /&gt;
 &lt;/picture&gt; 
                         </code></pre>
                         <p class="Resultado">Resultado:</p>
                         <div class="Implementacion">
                             <picture>
-                                <source srcset="./media/imagen.jpg" media="(min-width: 800px)" />
-                                <source srcset="./media/imagen2.jpg" media="(min-width: 600px)" />
+                                <source srcset="./media/imagen.jpg" media="width:150" />
+                                <source srcset="./media/imagen2.jpg" media="width: 100px" />
                                 <img src="./media/imagen2.jpg" alt="Beso" />
                             </picture>                              
                         </div>
                     </td>
-                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/source" target="_blank">Informacion adicional</a></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/source" target="_blank">Información Adicional</a></td>
                 </tr>
                 <tr id="span">
                     <th class="Elemento" scope="row">&lt;span&gt;</th>
@@ -2486,7 +2472,7 @@ width="250" height="200"&gt;&lt;/object&gt;
                             <span>Esto es otro Span.</span>
                         </div>
                     </td>
-                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/span" target="_blank">Informacion adicional</a></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/span" target="_blank">Información Adicional</a></td>
                 </tr>
                 <tr id="strong">
                     <th class="Elemento" scope="row">&lt;strong&gt;</th>
@@ -2509,7 +2495,7 @@ width="250" height="200"&gt;&lt;/object&gt;
                             <p><strong>Peligro:</strong> No entrar.</p>
                         </div>
                     </td>
-                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strong" target="_blank">Informacion adicional</a></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strong" target="_blank">Información Adicional</a></td>
                 </tr>
                 <tr id="style">
                     <th class="Elemento" scope="row">&lt;style&gt;</th>
@@ -2545,7 +2531,7 @@ width="250" height="200"&gt;&lt;/object&gt;
                             <div id="EjemploStyle">Ejemplo de un div con Style</div>
                         </div>
                     </td>
-                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/style" target="_blank">Informacion adicional</a></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/style" target="_blank">Información Adicional</a></td>
                 </tr>
                 <tr id="sub">
                     <th class="Elemento" scope="row">&lt;sub&gt;</th>
@@ -2568,180 +2554,644 @@ width="250" height="200"&gt;&lt;/object&gt;
                             <p>C<sub>8</sub>H<sub>10</sub>N<sub>4</sub>O<sub>2</sub></p>
                         </div>
                     </td>
-                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/sub" target="_blank">Informacion adicional</a></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/sub" target="_blank">Información Adicional</a></td>
                 </tr>
                 <tr id="summary">
                     <th class="Elemento" scope="row">&lt;summary&gt;</th>
                     <td class="Descripcion">
                         <p>Especifica un resumen, título o leyenda para el cuadro de divulgación de un elemento.</p>
                         <p>Contenido Permitido:</p>
-                        <ul><li></li></ul>
+                        <ul><li>Contenido de Fraseo</li></ul>
                         <p>Categorías a las que pertenece:</p>
+                        <ul><li>Ninguno</li></ul>
                     </td>
                     <td class="Ejemplo"><pre><code>
-                    
+&lt;summary&gt;Overview&lt;/summary&gt;
+    &lt;ol&gt;
+        &lt;li&gt;Cash on hand: $500.00&lt;/li&gt;
+        &lt;li&gt;Current invoice: $75.30&lt;/li&gt;
+        &lt;li&gt;Due date: 5/6/19&lt;/li&gt;
+    &lt;/ol&gt;
                         </code></pre>
+                        <p class="Resultado">Resultado:</p>
+                        <div class="Implementacion">
+                            <summary>Overview</summary>
+                            <ol>
+                              <li>Cash on hand: $500.00</li>
+                              <li>Current invoice: $75.30</li>
+                              <li>Due date: 5/6/19</li>
+                            </ol>
+                        </div>
                         
                     </td>
-                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/summary" target="_blank">Informacion adicional</a></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/summary" target="_blank">Información Adicional</a></td>
                 </tr>
                 <tr id="sup">
                     <th class="Elemento" scope="row">&lt;sup&gt;</th>
-                    <td class="Descripcion"></td>
+                    <td class="Descripcion">
+                        <p>Especifica texto en línea que se mostrará como superíndice.</p>
+                        <p>Contenido Permitido:</p>
+                        <ul><li>Contenido de Fraseo</li></ul>
+                        <p>Categorías a las que pertenece:</p>
+                        <ul>
+                            <li>Contenido Fluido</li>
+                            <li>Contenido de Fraseo</li>
+                            <li>Contenido Palpable</li>
+                        </ul>
+                    </td>
                     <td class="Ejemplo"><pre><code>
-                    
-                    </code></pre></td>
-                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/sup" target="_blank">Informacion adicional</a></td>
+&lt;p&gt;a&lt;sup&gt;2&lt;/sup&gt; + b&lt;sup&gt;2&lt;/sup&gt; = c&lt;sup&gt;2&lt;/sup&gt;&lt;/p&gt;
+                        </code></pre>
+                        <p class="Resultado">Resultado:</p>
+                        <div class="Implementacion">
+                            <p>a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup></p>
+                        </div>
+                    </td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/sup" target="_blank">Información Adicional</a></td>
                 </tr>
                 <tr id="table">
                     <th class="Elemento" scope="row">&lt;table&gt;</th>
-                    <td class="Descripcion"></td>
+                    <td class="Descripcion">
+                        <p>Representa datos tabulares, en una tabla bidimensional compuesta por filas y columnas</p>
+                        <p>Contenido Permitido:</p>
+                        <ul>
+                            <li>&lt;caption&gt;</li>
+                            <li>&lt;colgroup&gt;</li>
+                            <li>&lt;thead&gt;</li>
+                            <li>&lt;tbody&gt;</li>
+                            <li>&lt;tr&gt;</li>
+                            <li>&lt;tfoot&gt;</li>
+                        </ul>
+                        <p>Categorías a las que pertenece:</p>
+                        <ul><li>Contenido Fluido</li></ul>
+                    </td>
                     <td class="Ejemplo"><pre><code>
-                    
-                    </code></pre></td>
-                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table" target="_blank">Informacion adicional</a></td>
+&lt;table&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th colspan="2"&gt;The table header&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;The table body&lt;/td&gt;
+            &lt;td&gt;with two columns&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+                        </code></pre>
+                        <p class="Resultado">Resultado:</p>
+                        <div class="Implementacion">
+                            <table class="TEjemplo">
+                                <thead>
+                                  <tr>
+                                    <th colspan="2">The table header</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>The table body</td>
+                                    <td>with two columns</td>
+                                  </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table" target="_blank">Información Adicional</a></td>
                 </tr>
                 <tr id="tbody">
                     <th class="Elemento" scope="row">&lt;tbody&gt;</th>
-                    <td class="Descripcion"></td>
+                    <td class="Descripcion">
+                        <p>Encapsula un conjunto de filas de la tabla, lo que iindica que comprenden el cuerpo de la tabla</p>
+                        <p>Contenido Permitido:</p>
+                        <ul><li>&lt;tr&gt;</li></ul>
+                        <p>Categorías a las que pertenece:</p>
+                        <ul><li>Ninguno</li></ul>
+                    </td>
                     <td class="Ejemplo"><pre><code>
-                    
-                    </code></pre></td>
-                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tbody" target="_blank">Informacion adicional</a></td>
+&lt;table&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th colspan="2"&gt;The table header&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;The table body&lt;/td&gt;
+            &lt;td&gt;with two columns&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+                        </code></pre>
+                        <p class="Resultado">Resultado:</p>
+                        <div class="Implementacion">
+                            <table class="TEjemplo">
+                                <thead>
+                                    <tr>
+                                    <th colspan="2">The table header</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                    <td>The table body</td>
+                                    <td>with two columns</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tbody" target="_blank">Información Adicional</a></td>
                 </tr>
                 <tr id="td">
                     <th class="Elemento" scope="row">&lt;td&gt;</th>
-                    <td class="Descripcion"></td>
+                    <td class="Descripcion">
+                        <p>Define una celda de una tabla que contiene datos.</p>
+                        <p>Contenido Permitido:</p>
+                        <ul><li>Contenido Fluido</li></ul>
+                        <p>Categorías a las que pertenece:</p>
+                        <ul><li>Seccionamiento de Raiz</li></ul>
+                    </td>
                     <td class="Ejemplo"><pre><code>
-                    
-                    </code></pre></td>
-                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/td" target="_blank">Informacion adicional</a></td>
+&lt;table&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th colspan="2"&gt;The table header&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;The table body&lt;/td&gt;
+            &lt;td&gt;with two columns&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+                        </code></pre>
+                        <p class="Resultado">Resultado:</p>
+                        <div class="Implementacion">
+                            <table class="TEjemplo">
+                                <thead>
+                                    <tr>
+                                        <th colspan="2">The table header</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>The table body</td>
+                                        <td>with two columns</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/td" target="_blank">Información Adicional</a></td>
                 </tr>
                 <tr id="template">
                     <th class="Elemento" scope="row">&lt;template&gt;</th>
-                    <td class="Descripcion"></td>
+                    <td class="Descripcion">
+                        <p>Es un mecanismo para contener HTML que no debe representarse inmediatamente cuando se carga una página.</p>
+                        <p>Contenido Permitido:</p>
+                        <ul><li>Sin Restricciones</li></ul>
+                        <p>Categorías a las que pertenece:</p>
+                        <ul>
+                            <li>Contenido de Metadatos</li>
+                            <li>Contenido Fluido</li>
+                            <li>Contenido de Fraseo</li>
+                            <li>Elementos de Soporte de Script</li>
+                        </ul>
+                    </td>
                     <td class="Ejemplo"><pre><code>
-                    
+&lt;template id="template"&gt;
+    &lt;div&gt;Click me&lt;/div&gt;
+&lt;/template&gt;    
                     </code></pre></td>
-                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/template" target="_blank">Informacion adicional</a></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/template" target="_blank">Información Adicional</a></td>
                 </tr>
                 <tr id="textarea">
                     <th class="Elemento" scope="row">&lt;textarea&gt;</th>
-                    <td class="Descripcion"></td>
+                    <td class="Descripcion">
+                        <p>Representa un control de edición de texto sin formato de varias líneas.</p>
+                        <p>Contenido Permitido:</p>
+                        <ul><li>Texto</li></ul>
+                        <p>Categorías a las que pertenece:</p>
+                        <ul>
+                            <li>Contenido de Flujo</li>
+                            <li>Contenido de Fraseo</li>
+                            <li>Contenido Interactivo</li>
+                            <li>Listado</li>
+                            <li>Etiquetable</li>
+                            <li>Reiniciable</li>
+                            <li>Remitable</li>
+                        </ul>
+                    </td>
                     <td class="Ejemplo"><pre><code>
-                    
-                    </code></pre></td>
-                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea" target="_blank">Informacion adicional</a></td>
+&lt;textarea name="textarea" rows="5" cols="30" minlength="10" maxlength="20"&gt;
+    Esto es un textarea
+&lt;/textarea&gt;
+                        </code></pre>
+                        <p class="Resultado">Resultado:</p>
+                        <div class="Implementacion">
+                            <textarea name="textarea" rows="5" cols="30" minlength="10" maxlength="20">
+                                Esto es un textarea
+                            </textarea>
+                        </div>
+                    </td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea" target="_blank">Información Adicional</a></td>
                 </tr>
                 <tr id="tfoot">
                     <th class="Elemento" scope="row">&lt;tfoot&gt;</th>
-                    <td class="Descripcion"></td>
+                    <td class="Descripcion">
+                        <p>El elemento HTML define un conjunto de filas que resumenn las columnas de la tabla.</p>
+                        <p>Contenido Permitido:</p>
+                        <ul><li>&lt;tr&gt;</li></ul>
+                        <p>Categorías a las que pertenece:</p>
+                        <ul><li>Ninguno</li></ul>
+                    </td>
                     <td class="Ejemplo"><pre><code>
-                    
-                    </code></pre></td>
-                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tfoot" target="_blank">Informacion adicional</a></td>
+&lt;table&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Items&lt;/th&gt;
+            &lt;th scope="col"&gt;Expenditure&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;th scope="row"&gt;Donuts&lt;/th&gt;
+            &lt;td&gt;3,000&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th scope="row"&gt;Stationery&lt;/th&gt;
+            &lt;td&gt;18,000&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+    &lt;tfoot&gt;
+        &lt;tr&gt;
+            &lt;th scope="row"&gt;Totals&lt;/th&gt;
+            &lt;td&gt;21,000&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tfoot&gt;
+&lt;/table&gt;
+                        </code></pre>
+                        <p class="Resultado">Resultado:</p>
+                        <div class="Implementacion">
+                            <table class="TEjemplo">
+                                <thead>
+                                    <tr>
+                                        <th>Items</th>
+                                        <th scope="col">Expenditure</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">Donuts</th>
+                                        <td>3,000</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Stationery</th>
+                                        <td>18,000</td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <th scope="row">Totals</th>
+                                        <td>21,000</td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                    </td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tfoot" target="_blank">Información Adicional</a></td>
                 </tr>
                 <tr id="th">
                     <th class="Elemento" scope="row">&lt;th&gt;</th>
-                    <td class="Descripcion"></td>
+                    <td class="Descripcion">
+                        <p>Define una celda como el encabezado de un grupo de celdas de una tabla.</p>
+                        <p>Contenido Permitido</p>
+                        <ul><li>Contenido Fluido</li></ul>
+                        <p>Categorías a las que pertenece:</p>
+                        <ul><li>Ninguno</li></ul>
+                    </td>
                     <td class="Ejemplo"><pre><code>
-                    
-                    </code></pre></td>
-                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/th" target="_blank">Informacion adicional</a></td>
+&lt;table&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Login&lt;/th&gt;
+            &lt;th&gt;Email&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;user1&lt;/td&gt;
+            &lt;td&gt;user1@sample.com&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+                        </code></pre>
+                        <p class="Resultado">Resultado:</p>
+                        <div class="Implementacion">
+                            <table class="TEjemplo">
+                                <thead>
+                                    <tr>
+                                        <th>Login</th>
+                                        <th>Email</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>user1</td>
+                                        <td>user1@sample.com</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/th" target="_blank">Información Adicional</a></td>
                 </tr>
                 <tr id="thead">
                     <th class="Elemento" scope="row">&lt;thead&gt;</th>
-                    <td class="Descripcion"></td>
+                    <td class="Descripcion">
+                        <p>Define un conjunto de filas que definen el encabezado de las columnas de una tabla.</p>
+                        <p>Contenido Permitido:</p>
+                        <ul><li>&lt;tr&gt;</li></ul>
+                        <p>Categorías a las que pertenece:</p>
+                        <ul><li>Ninguno</li></ul>
+                    </td>
                     <td class="Ejemplo"><pre><code>
-                    
-                    </code></pre></td>
-                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/thead" target="_blank">Informacion adicional</a></td>
+&lt;table class="TEjemplo"&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Login&lt;/th&gt;
+            &lt;th&gt;Email&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+&lt;/table&gt;
+                        </code></pre>
+                        <p class="Resultado">Resultado:</p>
+                        <div class="Implementacion">
+                            <table class="TEjemplo">
+                                <thead>
+                                    <tr>
+                                        <th>Login</th>
+                                        <th>Email</th>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
+                    </td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/thead" target="_blank">Información Adicional</a></td>
                 </tr>
                 <tr id="time">
                     <th class="Elemento" scope="row">&lt;time&gt;</th>
-                    <td class="Descripcion"></td>
+                    <td class="Descripcion">
+                        <p>Representa un período de tiempo específico. Puede incluir el atributo para traducir fechas a un formato legible por máquina.</p>
+                        <p>Contenido Permitido:</p>
+                        <ul><li>Contenido de Fraseo</li></ul>
+                        <p>Categorías a las que pertenece:</p>
+                        <ul>
+                            <li>Contenido Fluido</li>
+                            <li>Contenido de Fraseo</li>
+                            <li>Contenido Palpable</li>
+                        </ul>
+                    </td>
                     <td class="Ejemplo"><pre><code>
-                    
-                    </code></pre></td>
-                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/time" target="_blank">Informacion adicional</a></td>
+&lt;p&gt;El concierto empieza a las &lt;time datetime="2018-07-07T20:00:00"&gt;20:00&lt;/time6&gt;.&lt;/p&gt;
+                        </code></pre>
+                        <p class="Resultado">Resultado</p>
+                        <div class="Implementacion">
+                            <p>El concierto empieza a las <time datetime="2018-07-07T20:00:00">20:00</time>.</p>
+                        </div>
+                    </td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/time" target="_blank">Información Adicional</a></td>
                 </tr>
                 <tr id="title">
                     <th class="Elemento" scope="row">&lt;title&gt;</th>
-                    <td class="Descripcion"></td>
+                    <td class="Descripcion">
+                        <p>Define el título del documento que se muestra en la barra de título de un naveador o pestaña de una página.</p>
+                        <p>Contenido Permitido:</p>
+                        <ul><li>Texto</li></ul>
+                        <p>Categorías a las que pertenece:</p>
+                        <ul><li>Contenido de Metadatos</li></ul>
+                    </td>
                     <td class="Ejemplo"><pre><code>
-                    
+&lt;title&gt;Manual HTML&lt;/title&gt;
                     </code></pre></td>
-                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/title" target="_blank">Informacion adicional</a></td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/title" target="_blank">Información Adicional</a></td>
                 </tr>
                 <tr id="tr">
                     <th class="Elemento" scope="row">&lt;tr&gt;</th>
-                    <td class="Descripcion"></td>
+                    <td class="Descripcion">
+                        <p>Define una fila de celdas en una tabla.</p>
+                        <p>Contenido Permitido:</p>
+                        <ul>
+                            <li>&lt;td&gt;</li>
+                            <li>Elementos de Soporte de Script</li>
+                            <li>&lt;template&gt;</li>
+                        </ul>
+                        <p>Categorías a las que pertenece:</p>
+                        <ul><li>Ninguno</li></ul>
+                    </td>
                     <td class="Ejemplo"><pre><code>
-                    
-                    </code></pre></td>
-                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tr" target="_blank">Informacion adicional</a></td>
+&lt;table&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Login&lt;/th&gt;
+            &lt;th&gt;Email&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;user1&lt;/td&gt;
+            &lt;td&gt;user1@sample.com&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+                        </code></pre>
+                        <p class="Resultado">Resultado:</p>
+                        <div class="Implementacion">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Login</th>
+                                        <th>Email</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>user1</td>
+                                        <td>user1@sample.com</td>
+                                    </tr>
+                                </tbody>
+                            </table>                            
+                        </div>
+                    </td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tr" target="_blank">Información Adicional</a></td>
                 </tr>
                 <tr id="track">
                     <th class="Elemento" scope="row">&lt;track&gt;</th>
-                    <td class="Descripcion"></td>
+                    <td class="Descripcion">
+                        <p>Se utiliza como un hijo de los elementos multimedia. Permite especificar pistas de texto cronometradas para por ejemplo, manejar subtítulos automaticamente.</p>
+                        <p>Contenido Permitido:</p>
+                        <ul><li>Ninguno</li></ul>
+                        <p>Categorías a las que pertenece:</p>
+                        <ul><li>Ninguno</li></ul>
+                    </td>
                     <td class="Ejemplo"><pre><code>
-                    
-                    </code></pre></td>
-                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/track" target="_blank">Informacion adicional</a></td>
-                </tr>
-                <tr id="tt">
-                    <th class="Elemento" scope="row">&lt;tt&gt;</th>
-                    <td class="Descripcion"></td>
-                    <td class="Ejemplo"><pre><code>
-                    
-                    </code></pre></td>
-                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tt" target="_blank">Informacion adicional</a></td>
+&lt;video controls src="./media/friday.mp4" width="300px"&gt;
+    &lt;track default kind="captions" srclang="en" src="/media/friday.vtt" /&gt;
+&lt;/video&gt;
+                        </code></pre>
+                        <p class="Resultado">Resultado:</p>
+                        <div class="Implementacion">
+                            <video controls src="./media/friday.mp4" width="300px">
+                                <track default kind="captions" srclang="en" src="/media/friday.vtt" />
+                            </video>
+                        </div>
+                    </td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/track" target="_blank">Información Adicional</a></td>
                 </tr>
                 <tr id="u">
                     <th class="Elemento" scope="row">&lt;u&gt;</th>
-                    <td class="Descripcion"></td>
+                    <td class="Descripcion">
+                        <p>Representa un tramo de texto en línea que debe representarse de manera que indique que tiene una anotación no textual (mal escrito).</p>
+                        <p>Contenido Permitido:</p>
+                        <ul><li>Contenido de Fraseo</li></ul>
+                        <p>Categorías a las que pertenece:</p>
+                        <ul>
+                            <li>Contenido Fluido</li>
+                            <li>Contenido de Fraseo</li>
+                            <li>Contenido Palpable</li>
+                        </ul>
+                    </td>
                     <td class="Ejemplo"><pre><code>
-                    
-                    </code></pre></td>
-                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/u" target="_blank">Informacion adicional</a></td>
+&lt;p&gt;This paragraph includes a &lt;u &gt;wrnogly&lt;/u&gt; spelled word.&lt;/p&gt;
+                        </code></pre>
+                        <p class="Resultado">Resultado:</p>
+                        <div class="Implementacion">
+                            <p>This paragraph includes a <u>wrnogly</u> spelled word.</p>
+                        </div>
+                    </td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/u" target="_blank">Información Adicional</a></td>
                 </tr>
                 <tr id="ul">
                     <th class="Elemento" scope="row">&lt;ul&gt;</th>
-                    <td class="Descripcion"></td>
+                    <td class="Descripcion">
+                        <p>Representa una lista desordenada representada como una lista con viñetas.</p>
+                        <p>Contenido Permitido:</p>
+                        <ul>
+                            <li>&lt;li&gt;</li>
+                            <li>&lt;script&gt;</li>
+                            <li>&lt;template&gt;</li>
+                        </ul>
+                        <p>Categorías a las que pertenece:</p>
+                        <ul>
+                            <li>Contenido Fluido</li>
+                            <li>Contenido Palpable</li>
+                        </ul>
+                    </td>
                     <td class="Ejemplo"><pre><code>
-                    
-                    </code></pre></td>
-                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul" target="_blank">Informacion adicional</a></td>
+&lt;ul&gt;
+    &lt;li&gt;first item&lt;/li&gt;
+    &lt;li&gt;second item&lt;/li&gt;
+    &lt;li&gt;third item&lt;/li&gt;
+&lt;/ul&gt;
+                        </code></pre>
+                        <p class="Resultado">Resultado:</p>
+                        <div class="Implementacion">
+                            <ul>
+                                <li>first item</li>
+                                <li>second item</li>
+                                <li>third item</li>
+                            </ul>
+                        </div>
+                    </td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul" target="_blank">Información Adicional</a></td>
                 </tr>
                 <tr id="var">
                     <th class="Elemento" scope="row">&lt;var&gt;</th>
-                    <td class="Descripcion"></td>
+                    <td class="Descripcion">
+                        <p>Representa el nombre de una variable en una expresión matemática o un contexto de programación.</p>
+                        <p>Contenido Permitido:</p>
+                        <ul><li>Contenido de Fraseo</li></ul>
+                        <p>Categorías a las que pertenece:</p>
+                        <ul>
+                            <li>Contenido Fluido</li>
+                            <li>Contenido de Fraseo</li>
+                            <li>Contenido Palpable</li>
+                        </ul>
+                    </td>
                     <td class="Ejemplo"><pre><code>
-                    
-                    </code></pre></td>
-                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/var" target="_blank">Informacion adicional</a></td>
+&lt;p&gt;
+    El area de un rectángulo es &lt;var&gt;b&lt;/var&gt; × &lt;var&gt;h&lt;/var&gt;,
+    donde &lt;var&gt;b&lt;/var&gt; representa la base o ancho y &lt;var&gt;h&lt;/var&gt;
+    la altura del rectángulo.
+&lt;/p&gt;
+                        </code></pre>
+                        <p class="Resultado">Resultado:</p>
+                        <div class="Implementacion"> 
+                            <p>
+                                El area de un rectángulo es <var>b</var> × <var>h</var>, donde <var>b</var> representa la base o ancho y
+                                <var>h</var> la altura del rectángulo.
+                            </p>
+                        </div>
+                    </td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/var" target="_blank">Información Adicional</a></td>
                 </tr>
                 <tr id="video">
                     <th class="Elemento" scope="row">&lt;video&gt;</th>
-                    <td class="Descripcion"></td>
+                    <td class="Descripcion">
+                        <p>Incorpora un reproductor multimedia que admite reproducción de video en el documento. También puede contener audio.</p>
+                        <p>Contenido Permitido:</p>
+                        <ul>
+                            <li>&lt;track&gt;</li>
+                            <li>Contenido Transparente</li>
+                        </ul>
+                        <p>Categorías a las que pertenece:</p>
+                        <ul>
+                            <li>Contenido Fluido</li>
+                            <li>Contenido de Fraseo</li>
+                            <li>Contenido Incrustado</li>
+                            <li>Contenido Interactivo</li>
+                            <li>Contenido Palpable</li>
+                        </ul>
+                    </td>
                     <td class="Ejemplo"><pre><code>
-                    
-                    </code></pre></td>
-                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video" target="_blank">Informacion adicional</a></td>
+&lt;video controls src="./media/friday.mp4" width="300px"&gt;&lt;/video&gt;
+                        </code></pre>
+                        <p class="Resultado">Resultado:</p>
+                        <div class="Implementacion">
+                            <video controls src="./media/friday.mp4" width="300px"></video>
+                        </div>
+                    </td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video" target="_blank">Información Adicional</a></td>
                 </tr>
                 <tr id="wbr">
                     <th class="Elemento" scope="row">&lt;wbr&gt;</th>
-                    <td class="Descripcion"></td>
+                    <td class="Descripcion">
+                        <p>Representa una oportunidad de salto de palabra, una posicion dentro del texto donde el navegador puede opcionalmente romper una línea.</p>
+                        <p>Contenido Permitido:</p>
+                        <ul><li>Ninguno</li></ul>
+                        <p>Categorías a las que pertenece:</p>
+                        <ul>
+                            <li>Contenido Fluido</li>
+                            <li>Contenido de Fraseo</li>
+                        </ul>
+                    </td>
                     <td class="Ejemplo"><pre><code>
-                    
-                    </code></pre></td>
-                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/wbr" target="_blank">Informacion adicional</a></td>
+&lt;div id="example-paragraphs"&gt;
+    &lt;p&gt;Fernstraßen&lt;wbr /&gt;bau&lt;wbr /&gt;privat&lt;wbr /&gt;finanzierungs&lt;wbr /&gt;gesetz&lt;/p&gt;
+&lt;/div&gt;
+                        </code></pre>
+                        <p class="Resultado">Resultado:</p>
+                        <div class="Implementacion">
+                            <div id="example-paragraphs">
+                                <p>Fernstraßen<wbr />bau<wbr />privat<wbr />finanzierungs<wbr />gesetz</p>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="Enlace"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/wbr" target="_blank">Información Adicional</a></td>
                 </tr>
                     
             </tbody>
-            <tfoot>
-
-            </tfoot>
         </table>
     </main>
     <footer>
